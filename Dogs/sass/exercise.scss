@@ -1,0 +1,408 @@
+//font-family: 'Merriweather', serif;
+//font-family: 'Oswald', sans-serif;
+body{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.header{
+    height: 922px;
+    position: relative;
+    background-color: #E5E5E5;
+    &__high-row{  
+        display: flex;
+        
+    }
+    &__logo{
+        display: inline-block;
+        margin-left: 110px;
+    }
+    &__menu{
+        display: flex;
+        font-family: 'Merriweather', serif;
+        font-size: 14px;
+        color: black;
+        margin-left: 53%;
+        margin-top: 24px;
+        & ul{
+            list-style: none;
+            display: flex;
+            & li{
+                margin-left: 50px;
+                & a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+    &__menu-burger{
+        cursor: pointer;
+        margin-left: 10%;
+        padding-top: 2%;
+    }
+    &__hide-menu{
+        display: inline-block;
+        position: absolute;
+        opacity: 0;
+        transition: 0.4s;
+        top: 8%;
+        left: 88.1%;
+        width: 200px;
+        & ul{
+            list-style: none;
+            padding: 0 0;
+            margin: 0 0;
+        }
+        & li{
+            text-align: center;
+            margin-bottom: 6px;
+        }
+        & a {
+            text-align: center;
+            color: black;
+            text-decoration: none;
+            font-family: 'Merriweather', serif;
+            font-size: 14px;
+            &:hover{
+                font-size: 15px;
+                transition: 0.2s;
+            }
+        }
+    }
+    &__hide-menu.active{
+        opacity: 1;
+        transition: 0.4s;
+    }
+    &__row{
+        display: flex;
+        padding-top: 4%;
+        margin-top: 2%;
+    }
+    &__left-div{
+        padding-left: 4%;
+        width: 50%;
+    }
+    &__right-div{
+        width: 50%;
+    }
+    &__image{
+        float: right;
+        & img{
+            width: 1039px;
+            height: 620px;
+        }
+        
+    }
+    &__description{
+        width: 688px;
+        font-family: 'Merriweather', serif;
+        & span{
+            font-size: 68px;
+            font-family: 'Oswald', sans-serif;
+        }
+        & a {
+            color: black;
+        }
+
+    }
+    &__towers{
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        margin-top: 9%;
+        & span{
+            font-size: 48px;
+            font-family: 'Oswald', sans-serif;
+        }
+    }
+}
+.description{
+    padding-left: 4%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    display: flex;
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    &__left-part{
+        max-width: 830px;
+        & span{
+            font-family: 'Oswald', sans-serif;
+            font-size: 48px;
+        }
+        & p span {
+            font-family: 'Oswald', sans-serif;
+            font-size: 24px;
+        }
+    }
+    &__right-part{
+        margin-left: 3%;
+        font-family: 'Merriweather', serif;
+        font-size: 18px;
+        & span{
+            font-family: 'Oswald', sans-serif;
+            font-size: 48px;
+        }
+        & ul{
+            list-style: none;
+            padding-left: 0px;
+            margin-bottom: 8%;
+            & li{
+                margin-bottom: 10px;
+                font-family: 'Oswald', sans-serif;
+                font-size: 24px;
+            }
+        }
+    }
+    &__logo{
+        & img {
+            padding-left: 9%;
+            padding-top: 6%;
+        }
+    }
+}
+.programm{
+    background-color: #327551;
+    padding-top: 4%;
+    padding-left: 4%;
+    padding-bottom: 4%;
+    color: white;
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    & p span{
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+    }
+    & p{
+        font-size: 18px;
+        max-width: 524px;
+        font-family: 'Merriweather', serif;
+    }
+    &__first-row{
+        display: flex;
+        padding-bottom:6%;
+    }
+    &__text{
+        max-width: 688px;
+        & span {
+            font-family: 'Oswald', sans-serif;
+            font-size: 48px;
+        }       
+    }
+    &__reference{
+        font-size: 14px;
+        display: flex;
+        margin-left: 26%;
+        margin-top: 6%;
+        & img{
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+        }
+        & a{
+            text-decoration: none;
+            color: white;
+        }
+
+    }
+    &__youtube{
+        width: 60px;
+        height: 60px;
+        display: flex;
+        border-radius: 50%;
+        border: 3px solid white;
+        margin-right: 15px;
+        justify-content: center;
+        & img{
+            align-self: center;
+            width: 27px;
+            height: 29px;
+            margin-left: 22px;
+        }
+
+    }
+    &__second-row{
+        display: flex;
+        padding-right: 10%;
+    }
+    &__first-column{
+        display: flex;
+        padding-bottom: 6%;
+        width: 425px;
+        flex-direction: column;
+        & p{
+            margin-bottom: 20%;
+        }
+    }
+    &__second-column{
+        display: flex;
+        width: 425px;
+        flex-direction: column;
+        margin-left: 6%;
+        & p{
+            margin-bottom: 20%;
+        }
+    }
+    &__third-column{
+        display: flex;
+        margin-left: 10%;
+        flex-direction: column;
+        width: 524px;
+        & p{
+            margin-bottom: 20%;
+            margin-right: 0px;
+        }
+    }  
+}
+.school{
+    position: relative;
+    padding-left: 4%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-bottom: 12%;
+    &__title{
+        font-size: 48px;
+        font-family: 'Oswald', sans-serif;
+
+    }
+    &__tower{
+        display: flex;
+        & ul{
+            list-style: none;
+            padding-left: 0;
+            & :first-child{
+                font-family: 'Oswald', sans-serif;
+                font-size: 24px;
+            }
+            & li{
+                margin-bottom: 10px;
+            }
+            & a {
+                color: black;
+                font-family: 'Merriweather', serif;
+                font-size: 18px;
+            }
+        }
+    }
+    &__second-town{
+        margin-left: 25%;
+    }
+    &__reference{
+        max-width: 726px;
+        font-family: 'Merriweather', serif;
+        font-size: 18px;
+        margin-top: 7%;
+    } 
+    &__bottom-row{
+        padding-top: 8%;
+        display: flex;
+    }
+    &__fon{
+        position: absolute;
+        width: 691px;
+        left: 58%;
+        top: 65%;
+    }
+    &__dog-image{
+        position: absolute;
+        left: 54.8%;
+        top: 22.1%;
+        width: 751px;
+    }
+    &__logo{
+        width: 210px;
+        height: 83px;
+        z-index: 2;
+        position: absolute;
+        left: 61%;
+        top: 70%;
+    }
+}
+.footer{
+    background: radial-gradient(65.16% 565.02% at 81.43% 50%, #E0E0E0 0%, #FFFDFA 50.61%, #E0E0E0 100%);
+    position: relative;
+    height: 750px;
+    &__logo{
+        width: 294px;
+        height: 118px;
+        position:absolute;
+        left: 5.5%;
+        top: 15%;
+    }
+    &__social{
+        position: absolute;
+        left: 6.5%;
+        top: 34%;
+        & p{
+            font-size: 18px;
+            font-family: 'Merriweather', serif;
+        }
+        & img{
+            margin-right: 7px;
+            cursor: pointer;
+        }
+    }
+    &__phone{
+        position: absolute;
+        font-size: 18px;
+        font-family: 'Merriweather', serif;
+        left: 6.3%;
+        top: 55%;
+        & span {
+            font-size: 38px;
+            font-family: 'Oswald', sans-serif;
+            line-height: 1.8;
+        }
+    }
+    &__about-dog{
+        position: absolute;
+        left: 27%;
+        top: 15%;
+        & span {
+            font-size: 38px;
+            font-family: 'Oswald', sans-serif;
+            line-height: 1.8;
+        }
+        & ul {
+            list-style: none;
+            padding-left: 0px;
+            & li{
+                font-family: 'Merriweather', serif;
+                font-size: 18px;
+                padding-bottom: 10px;
+                & a {
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &__programms{
+        position: absolute;
+        left: 48%;
+        top: 15%;
+        & span{
+            font-size: 38px;
+            font-family: 'Oswald', sans-serif;
+            line-height: 1.8;
+        }
+        & ul {
+            list-style: none;
+            padding-left: 0px;
+            & li{
+                font-family: 'Merriweather', serif;
+                font-size: 18px;
+                padding-bottom: 10px;
+                & a {
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,412 @@
+//font-family: 'Merriweather', serif;
+//font-family: 'Oswald', sans-serif;
+body{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.header{
+    height: 922px;
+    position: relative;
+    background-color: #E5E5E5;
+    &__high-row{
+        width: 100%;  
+        display: flex;
+    }
+    &__logo{
+        display: inline-block;
+        margin-left: 110px;
+    }
+    &__menu{
+        display: flex;
+        font-family: 'Merriweather', serif;
+        font-size: 14px;
+        color: black;
+        margin-left: 53%;
+        margin-top: 24px;
+        & ul{
+            list-style: none;
+            display: flex;
+            & li{
+                margin-left: 50px;
+                & a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+    &__menu-burger{
+        cursor: pointer;
+        margin-left: 10%;
+        padding-top: 2%;
+    }
+    &__hide-menu{
+        display: inline-block;
+        position: absolute;
+        opacity: 0;
+        transition: 0.4s;
+        top: 8%;
+        left: 88.1%;
+        width: 200px;
+        & ul{
+            list-style: none;
+            padding: 0 0;
+            margin: 0 0;
+        }
+        & li{
+            text-align: center;
+            margin-bottom: 6px;
+        }
+        & a {
+            text-align: center;
+            color: black;
+            text-decoration: none;
+            font-family: 'Merriweather', serif;
+            font-size: 14px;
+            &:hover{
+                font-size: 15px;
+                transition: 0.2s;
+            }
+        }
+    }
+    &__hide-menu.active{
+        opacity: 1;
+        transition: 0.4s;
+    }
+    &__training, .header__offendiens, .header__breeders, .header__guard{
+        position: absolute;
+        & a{
+            font-size: 38px;
+            font-family: 'Oswald', sans-serif;
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
+        & p {
+            font-size: 14px;
+            font-family: 'Merriweather', serif;
+
+        }
+        &:hover{
+            & a{
+                font-size: 64px;
+                color: #327551;
+                transition: 0.3s;
+            }
+        }
+    }
+    &__training{
+        left: 268px;
+        top: 131px;
+    }
+    &__offendiens{    
+        left: 176px;
+        top: 328px;
+    }
+    &__breeders{   
+        left: 268px;
+        top: 529px;
+    }
+    &__guard{   
+        left: 1429px;
+        top: 241px;
+    }
+    &__reference{
+        & img{
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+        }
+        position: absolute;
+        left: 120px;
+        top: 753px;
+        font-family: 'Merriweather', serif;
+        font-size: 14px;
+        display: flex;
+        & a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+    &__model{
+         background-color: #E5E5E5;
+         z-index: 3;
+         margin-left: 27%;
+    }
+}
+.content{
+    width: 100%;
+}
+.Reliable-dog{
+    height: 1019px;
+    width: 100%;
+    margin-top: -19px;
+    background:  url("../img/main/backGreenFon.png") no-repeat, url("../img/main/greenFon.png") right no-repeat;
+    background-blend-mode: multiply;
+    position:relative;
+    &__description{
+        width: 726px;
+        height: 285px;
+        color: white;
+        font-family: 'Merriweather', serif;
+        font-size: 18px;
+        margin-left: 3%;
+        padding-top: 8%;
+        & span {
+            font-size: 48px;
+            font-family: 'Oswald', sans-serif;
+            line-height: 2;
+        }
+        & a{
+            
+            color: white;
+            font-family: 'Merriweather', serif;
+        }
+    }
+    &__logo-big{
+        position: absolute;
+        left: 63%;
+        top: 19%;
+    }
+    &__social{
+        margin-left: 3%;
+        padding-bottom: 10px;
+        margin-top: 22%;
+        & p{
+            font-family: 'Oswald', sans-serif;
+            font-size: 48px;
+            color: white;
+            margin-bottom: 10px;
+        }
+        & ul{
+            list-style: none;
+            display: flex;
+            padding-left: 0px;
+        }
+        & i {
+            color: white;
+            font-size: 60px;
+            margin-right: 63px;
+            cursor: pointer;
+        }
+    }
+    
+}
+.mainPageBreeds{
+    height: 924px;
+    margin-bottom:89px;
+    position: relative;
+    &__description{
+        width: 726px;
+        height: 285px;
+        font-family: 'Merriweather', serif;
+        font-size: 18px;
+        margin-left: 3%;
+        padding-top: 4%;
+        & span{
+            font-size: 48px;
+            font-family: 'Oswald', sans-serif;
+            line-height: 2; 
+        }
+        & a{
+            font-family: 'Merriweather', serif;
+            color: black;
+        }
+    }
+    &__reference{
+        position:absolute;
+        display: flex;
+        cursor: pointer;
+        left: 52%;
+        top: 25%;
+        & a{
+            color: black;
+            text-decoration: none;
+            font-family: 'Merriweather', serif;
+            font-size: 14;
+        }
+        & img{
+            margin-right: 10px;
+            width: 60px;
+            height: 60px;
+        }
+    }
+    &__dogsRow{
+        display: flex;
+        margin-top: 200px;
+    }
+    &__firstDog{
+        width: 726px;
+        height: 307px;
+        margin-right: 10px;
+        position: relative;
+        float: right;
+        & img{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        & span{
+            font-size: 38px;
+            font-family: 'Oswald', sans-serif;
+            line-height: 2; 
+        }
+        & a {
+            color: black;
+            font-family: 'Merriweather', serif;
+        }
+        & p{
+            font-family: 'Merriweather', serif;
+            position: absolute;
+            top: 40%;
+            left: 16%;
+            z-index: 2;
+        }
+    }
+    &__secondDog{
+        width: 726px;
+        height: 307px;
+        margin-right: 10px;
+        position: relative;
+        float: right;
+        & img{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        & span{
+            font-size: 38px;
+            font-family: 'Oswald', sans-serif;
+            line-height: 2; 
+        }
+        & a {
+            color: black;
+            font-family: 'Merriweather', serif;
+        }
+        & p{
+            font-family: 'Merriweather', serif;
+            position: absolute;
+            top: 40%;
+            left: 16%;
+            z-index: 2;
+        }
+    }
+    &__thirdDog{
+        width: 726px;
+        height: 307px;
+        margin-right: 10px;
+        position: relative;
+        float: right;
+        & img{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        & span{
+            font-size: 38px;
+            font-family: 'Oswald', sans-serif;
+            line-height: 2; 
+        }
+        & a {
+            color: black;
+            font-family: 'Merriweather', serif;
+        }
+        & p{
+            font-family: 'Merriweather', serif;
+            position: absolute;
+            top: 40%;
+            left: 16%;
+            z-index: 2;
+        }
+    }
+}
+.footer{
+    background: radial-gradient(65.16% 565.02% at 81.43% 50%, #E0E0E0 0%, #FFFDFA 50.61%, #E0E0E0 100%);
+    position: relative;
+    height: 750px;
+    &__logo{
+        width: 294px;
+        height: 118px;
+        position:absolute;
+        left: 5.5%;
+        top: 15%;
+    }
+    &__social{
+        position: absolute;
+        left: 6.5%;
+        top: 34%;
+        & p{
+            font-size: 18px;
+            font-family: 'Merriweather', serif;
+        }
+        & img{
+            margin-right: 7px;
+            cursor: pointer;
+        }
+    }
+    &__phone{
+        position: absolute;
+        font-size: 18px;
+        font-family: 'Merriweather', serif;
+        left: 6.3%;
+        top: 55%;
+        & span {
+            font-size: 38px;
+            font-family: 'Oswald', sans-serif;
+            line-height: 1.8;
+        }
+    }
+    &__about-dog{
+        position: absolute;
+        left: 27%;
+        top: 15%;
+        & span {
+            font-size: 38px;
+            font-family: 'Oswald', sans-serif;
+            line-height: 1.8;
+        }
+        & ul {
+            list-style: none;
+            padding-left: 0px;
+            & li{
+                font-family: 'Merriweather', serif;
+                font-size: 18px;
+                padding-bottom: 10px;
+                & a {
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &__programms{
+        position: absolute;
+        left: 48%;
+        top: 15%;
+        & span{
+            font-size: 38px;
+            font-family: 'Oswald', sans-serif;
+            line-height: 1.8;
+        }
+        & ul {
+            list-style: none;
+            padding-left: 0px;
+            & li{
+                font-family: 'Merriweather', serif;
+                font-size: 18px;
+                padding-bottom: 10px;
+                & a {
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+}

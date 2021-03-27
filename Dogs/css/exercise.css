@@ -1,0 +1,525 @@
+body {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 922px;
+  position: relative;
+  background-color: #E5E5E5;
+}
+
+.header__high-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__logo {
+  display: inline-block;
+  margin-left: 110px;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  color: black;
+  margin-left: 53%;
+  margin-top: 24px;
+}
+
+.header__menu ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__menu ul li {
+  margin-left: 50px;
+}
+
+.header__menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.header__menu-burger {
+  cursor: pointer;
+  margin-left: 10%;
+  padding-top: 2%;
+}
+
+.header__hide-menu {
+  display: inline-block;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  top: 8%;
+  left: 88.1%;
+  width: 200px;
+}
+
+.header__hide-menu ul {
+  list-style: none;
+  padding: 0 0;
+  margin: 0 0;
+}
+
+.header__hide-menu li {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.header__hide-menu a {
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+}
+
+.header__hide-menu a:hover {
+  font-size: 15px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.header__hide-menu.active {
+  opacity: 1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.header__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 4%;
+  margin-top: 2%;
+}
+
+.header__left-div {
+  padding-left: 4%;
+  width: 50%;
+}
+
+.header__right-div {
+  width: 50%;
+}
+
+.header__image {
+  float: right;
+}
+
+.header__image img {
+  width: 1039px;
+  height: 620px;
+}
+
+.header__description {
+  width: 688px;
+  font-family: 'Merriweather', serif;
+}
+
+.header__description span {
+  font-size: 68px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.header__description a {
+  color: black;
+}
+
+.header__towers {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  margin-top: 9%;
+}
+
+.header__towers span {
+  font-size: 48px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.description {
+  padding-left: 4%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+}
+
+.description__left-part {
+  max-width: 830px;
+}
+
+.description__left-part span {
+  font-family: 'Oswald', sans-serif;
+  font-size: 48px;
+}
+
+.description__left-part p span {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+}
+
+.description__right-part {
+  margin-left: 3%;
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+}
+
+.description__right-part span {
+  font-family: 'Oswald', sans-serif;
+  font-size: 48px;
+}
+
+.description__right-part ul {
+  list-style: none;
+  padding-left: 0px;
+  margin-bottom: 8%;
+}
+
+.description__right-part ul li {
+  margin-bottom: 10px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+}
+
+.description__logo img {
+  padding-left: 9%;
+  padding-top: 6%;
+}
+
+.programm {
+  background-color: #327551;
+  padding-top: 4%;
+  padding-left: 4%;
+  padding-bottom: 4%;
+  color: white;
+  font-size: 18px;
+  font-family: 'Merriweather', serif;
+}
+
+.programm p span {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+}
+
+.programm p {
+  font-size: 18px;
+  max-width: 524px;
+  font-family: 'Merriweather', serif;
+}
+
+.programm__first-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 6%;
+}
+
+.programm__text {
+  max-width: 688px;
+}
+
+.programm__text span {
+  font-family: 'Oswald', sans-serif;
+  font-size: 48px;
+}
+
+.programm__reference {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 26%;
+  margin-top: 6%;
+}
+
+.programm__reference img {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+
+.programm__reference a {
+  text-decoration: none;
+  color: white;
+}
+
+.programm__youtube {
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-right: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.programm__youtube img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 27px;
+  height: 29px;
+  margin-left: 22px;
+}
+
+.programm__second-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 10%;
+}
+
+.programm__first-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 6%;
+  width: 425px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.programm__first-column p {
+  margin-bottom: 20%;
+}
+
+.programm__second-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 425px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 6%;
+}
+
+.programm__second-column p {
+  margin-bottom: 20%;
+}
+
+.programm__third-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 524px;
+}
+
+.programm__third-column p {
+  margin-bottom: 20%;
+  margin-right: 0px;
+}
+
+.school {
+  position: relative;
+  padding-left: 4%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-bottom: 12%;
+}
+
+.school__title {
+  font-size: 48px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.school__tower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.school__tower ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.school__tower ul :first-child {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+}
+
+.school__tower ul li {
+  margin-bottom: 10px;
+}
+
+.school__tower ul a {
+  color: black;
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+}
+
+.school__second-town {
+  margin-left: 25%;
+}
+
+.school__reference {
+  max-width: 726px;
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  margin-top: 7%;
+}
+
+.school__bottom-row {
+  padding-top: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.school__fon {
+  position: absolute;
+  width: 691px;
+  left: 58%;
+  top: 65%;
+}
+
+.school__dog-image {
+  position: absolute;
+  left: 54.8%;
+  top: 22.1%;
+  width: 751px;
+}
+
+.school__logo {
+  width: 210px;
+  height: 83px;
+  z-index: 2;
+  position: absolute;
+  left: 61%;
+  top: 70%;
+}
+
+.footer {
+  background: radial-gradient(65.16% 565.02% at 81.43% 50%, #E0E0E0 0%, #FFFDFA 50.61%, #E0E0E0 100%);
+  position: relative;
+  height: 750px;
+}
+
+.footer__logo {
+  width: 294px;
+  height: 118px;
+  position: absolute;
+  left: 5.5%;
+  top: 15%;
+}
+
+.footer__social {
+  position: absolute;
+  left: 6.5%;
+  top: 34%;
+}
+
+.footer__social p {
+  font-size: 18px;
+  font-family: 'Merriweather', serif;
+}
+
+.footer__social img {
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.footer__phone {
+  position: absolute;
+  font-size: 18px;
+  font-family: 'Merriweather', serif;
+  left: 6.3%;
+  top: 55%;
+}
+
+.footer__phone span {
+  font-size: 38px;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.8;
+}
+
+.footer__about-dog {
+  position: absolute;
+  left: 27%;
+  top: 15%;
+}
+
+.footer__about-dog span {
+  font-size: 38px;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.8;
+}
+
+.footer__about-dog ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.footer__about-dog ul li {
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.footer__about-dog ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer__programms {
+  position: absolute;
+  left: 48%;
+  top: 15%;
+}
+
+.footer__programms span {
+  font-size: 38px;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.8;
+}
+
+.footer__programms ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.footer__programms ul li {
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.footer__programms ul li a {
+  color: black;
+  text-decoration: none;
+}
