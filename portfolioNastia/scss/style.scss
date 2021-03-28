@@ -1,0 +1,451 @@
+//font-family: 'Merriweather', serif;
+//font-family: 'Oswald', sans-serif;
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 1920px;
+    margin: 0 auto;
+}
+.header{
+    background: url("../img/headerFon.png") no-repeat;
+    width: 1920px;
+    height: 1040px;
+    position: relative;
+    &__high-row{
+        display: flex;
+        padding-left: 3%;
+    }
+    &__logo{
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        color: #D73526;
+        padding-top: 1%;
+    }
+    &__menu{
+        padding-top: 5px;
+        margin-left: 58%;
+        & ul {
+            display: flex;
+            list-style: none;
+            & li {
+                & a{
+                    color: #FFF7ED;
+                    font-family: 'Oswald', sans-serif;
+                    font-size: 18px;
+                    text-decoration: none;
+                    margin-right: 28px;
+                }
+            }
+        }
+    }
+    &__title{
+        position: absolute;
+        color: #D73526;
+        font-size: 48px;
+        font-family: Oswald;
+        margin-left: 13%;
+         
+    }
+    &__gallery{
+        display: flex;
+        padding-left: 13%;
+        padding-top: 6%;
+
+    }
+    &__column{
+        width: 270px;
+        margin-right: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__card{
+        position: relative;
+        display: flex;
+        border-radius: 10px;
+    }
+    &__smoke{
+        position: absolute;
+        background-color: black;
+        z-index: 3;
+        width: 96%;
+        height: 100%;
+        border-radius: 10px;
+        opacity: 0.2;
+        &:hover{
+            opacity: 0;
+            transition: 0.2s;
+        }
+    }
+    &__text-bottom{
+        font-family: Merriweather;
+        margin-top: 15px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: #FFF7ED;
+        & span {
+            font-family: 'Oswald', sans-serif;
+            font-size: 24px;
+            line-height: 36px;
+            color: #FFF7ED;
+        }
+    }
+}
+.portfolio{
+    height: 3482px;
+    position: relative;
+    background: url("../img/portfolioFon.png") no-repeat;
+    &__title{
+        position: absolute;
+        color: #D73526;
+        font-size: 48px;
+        font-family: Oswald;
+        margin-left: 7%;
+        top: 3%;   
+    }
+    &__first-row{
+        padding-top: 11%;
+        padding-left: 7%;
+        display: flex;
+        & span {
+            font-family: Oswald;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 36px;
+
+            color: #000000;
+        }
+    }
+    &__card{
+        margin-right: 53px;
+    }
+    &__image{
+        width: 380px;
+        height: 380px;
+    }
+    &__text-bottom{
+        margin-top: 25px;
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 36px;
+
+        color: #FFF7ED;
+    }
+    &__second-row{
+        padding-top: 7%;
+        padding-left: 7%;
+        display: flex;
+    }
+    &__third-row{
+        padding-top: 7%;
+        padding-left: 7%;
+        display: flex;
+    }
+    &__button{
+        background: #D73526;
+        position: absolute;
+        width: 316px;
+        height: 63px;
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        text-decoration: none;
+        padding-top: 7px;
+        color: #FFF7ED;
+        border-radius: 10px;
+        left: 7%;
+        top: 57%;
+    }
+    &__big-text{
+        width: 934px;
+        height: 400px;
+        position:absolute;
+        z-index: 3;
+        top: 68%;
+        left: 27%;
+        font-family: Merriweather;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 20px;   
+        color: #FFF7ED;
+
+        & :first-child{
+            font-family: Oswald;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 60px;
+            line-height: 89px;
+
+            color: #FFF7ED;
+        }
+        & span{
+            font-family: Oswald;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 53px;
+
+            color: #FFF7ED;
+        }
+        & p {
+            padding-top: 1%;
+            font-family: Merriweather;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 20px;
+            color: #FFF7ED;
+        }
+    }
+    &__push{
+        background: #D73526;
+        width: 1014px;
+        height: 300px;
+        position: absolute;
+        left: 22%;
+        top: 68%;
+    }
+}
+.answer{
+    height: 2069px;
+    background: url("../img/aswerFon.png");
+    position: relative;
+    &__title{
+        position: absolute;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 89px;
+    /* identical to box height */
+    left: 2%;
+    top: 2%;
+    color: #D73526;
+    }
+    &__first-row{
+        display: flex;
+        padding-top: 10%;
+        padding-left: 5%;
+    }
+    &__cost{
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    width: 630px;
+    color: #2C2E39;
+        & span {
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 53px;
+        
+        color: #2C2E39;
+        }
+    }
+    &__table{
+        margin-left: 78px;
+        display: flex;
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        color: #2C2E39;
+        & span {
+                font-family: Oswald;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                
+                /* identical to box height */
+
+
+                color: #2C2E39;
+            }
+    }
+    &__column{
+        margin-right: 60px;
+    }
+    &__second-row{
+        display: flex;
+        padding-left: 5%;
+        padding-top: 17%;
+    }
+    &__site{
+        font-family: Merriweather;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 23px;
+        width: 1120px;
+        color: #2C2E39;
+        margin-right: 60px;
+        & span{
+            font-family: Oswald;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 53px;
+
+            color: #2C2E39;
+        }
+
+    }
+    &__third-row{
+        display: flex;
+        padding-left: 5%;
+        padding-top: 11%;
+    }
+    &__logo{
+        font-family: Merriweather;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 23px;
+        width: 1120px;
+        color: #2C2E39;
+        margin-right: 60px;
+        & span{
+            font-family: Oswald;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 53px;
+            color: #2C2E39;
+        }
+    }
+    &__button{
+        background: #D73526;
+        position: absolute;
+        width: 316px;
+        height: 63px;
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        text-decoration: none;
+        padding-top: 11px;
+        color: #FFF7ED;
+        border-radius: 10px;
+        left: 5%;
+        top: 87%;
+    }
+
+}
+.youtube{
+    background: url("../img/youtubeFon.png");
+    height: 684px;
+    display: flex;
+    position: relative;
+    &__title{
+        display: flex;
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 89px;
+        /* identical to box height */
+        color: #FFF7ED;
+        margin-top: 14%;
+        margin-left: 5%;
+    }
+    &__logo{
+        position: absolute;
+        width: 292px;
+        height: 141px;
+        left: 22%;
+        top: 36%;
+    }
+    &__cat{
+        width: 830px;
+        height: 456px;
+        position: absolute;
+        margin-left: 49%;
+        margin-top: 6%;
+    }
+    &__button{
+        background: #2C2E39;
+        position: absolute;
+        width: 316px;
+        height: 63px;
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        text-decoration: none;
+        padding-top: 11px;
+        color: #FFF7ED;
+        border-radius: 10px;
+        left: 5%;
+        top: 57%;
+    }
+
+}
+.footer{
+    background: url("../img/footerFon.png");
+    height: 852px;
+    padding-left: 6%;
+    padding-top: 15%;
+    &__phone{
+        font-family: Merriweather;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 30px;
+        display: flex;
+        color: #FFF7ED;
+        & img{
+            margin-right: 10px;
+            margin-top: 12px;
+            width: 48px;
+            height: 48px;
+        }
+    }
+    &__contact{
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 89px;
+        /* identical to box height */
+        color: #FFF7ED;
+    }
+    &__mail{
+        display: flex;
+        & a {
+            text-decoration: none;
+            font-family: Merriweather;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 30px;
+            color: #FFF7ED;
+        }
+        & img{
+            margin-right: 27px;
+            margin-top: 23px;
+            width: 33px;
+            height: 19px;
+        }
+    }
+    &__social{
+        padding-top: 2%;
+        margin-left: -2%;
+    }
+}
