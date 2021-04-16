@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script type="text/javascript" src="Js//jQuery.js"></script>
+    <script type="text/javascript" src="Js//code.js"></script>
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <wrapper class="wrapper">
+        <header class="header">
+            <div class="header__first-row">
+                <div class="menu-burger">
+                    <span></span>
+                </div>
+                <div class="header__currency">
+                    <p>Currency:</p>
+                    <div class="header__select" data-state="">
+                        <div class="header__select__title" data-default="Option 0">UA</div>
+                        <div class="header__select__content">
+                            <input id="singleSelect0" class="header__select__input" type="radio" name="singleSelect"
+                                checked />
+                            <label for="singleSelect0" class="header__select__label">UA</label>
+                            <input id="singleSelect1" class="header__select__input" type="radio" name="singleSelect" />
+                            <label for="singleSelect1" class="header__select__label">RUB</label>
+                            <input id="singleSelect3" class="header__select__input" type="radio" name="singleSelect" />
+                            <label for="singleSelect3" class="header__select__label">EUR</label>
+                            <input id="singleSelect4" class="header__select__input" type="radio" name="singleSelect" />
+                            <label for="singleSelect4" class="header__select__label">UA</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__register-and-sign">
+                    <p><a href="#" class="Register">Register</a></p>
+                    <p><a href="#" class="Sign-in">Sign In</a></p>
+                </div>
+                <div class="header__down-slide">
+                    <nav class="nav-mobile">
+                        <ul>
+                            <li id="MENS-mobile">MENS</li>
+                            <ul class="header__mens-list">
+                                <li><a href="#">Jackets</a> </li>
+                                <li><a href="#">Hoodies & Switshorts</a></li>
+                                <li><a href="#">Polo Shirts</a></li>
+                                <li><a href="#">Sportswear</a> </li>
+                                <li><a href="#">Trousers & Chinos</a> </li>
+                                <li><a href="#">T-Shirts</a></li>
+                            </ul>
+                            <li id="WOOMENS-mobile">WOOMENS</li>
+                            <ul class="header__womens-list">
+                                <li><a href="#">Jackets</a> </li>
+                                <li><a href="#">Hoodies & Switshorts</a></li>
+                                <li><a href="#">Polo Shirts</a></li>
+                                <li><a href="#">Sportswear</a> </li>
+                                <li><a href="#">Trousers & Chinos</a> </li>
+                                <li><a href="#">T-Shirts</a></li>
+                            </ul>
+                            <li>THE BRAND</li>
+                            <li>LOKAL STORIES</li>
+                            <li>LOOK BOOK</li>
+                        </ul>
+                    </nav>
+
+                </div>
+                <div class="header__cart">
+                    <i class="fa fa-shopping-cart"></i>
+                    <p>empty</p>
+                    <i class="fa fa-angle-down cart-angle"></i>
+                </div>
+            </div>
+            <div class="header__background">
+                <img src="img/main-page/header.png" alt="" class="main-image">
+                <div class="header__second-row">
+                    <div class="header__logo">
+                        <img src="img/main-page/logo.png" alt="">
+                    </div>
+                    <nav class="nav">
+                        <ul>
+                            <li>
+                                <div class="Mens"> MENS<br> <i class="fa fa-angle-down"></i></div>
+                            </li>
+                            <li>
+                                <div class="Womens">WOMENS<br> <i class="fa fa-angle-down"></i></div>
+
+                            </li>
+                            <li id="The-band">
+                                <div><a href=""></a>THE BRAND</a></div>
+                            </li>
+                            <li>
+                                <div class="Local-stories">LOCAL STORES<br> <i class="fa fa-angle-down"></i></div>
+
+                            </li>
+                            <li>
+                                <div class="Look-book">LOOK BOOK<br><i class="fa fa-angle-down"></i></div>
+
+                            </li>
+                        </ul>
+
+                    </nav>
+                    <div class="header__men-menu">
+                        <div class="header__list">
+                            <ul>
+                                <li class="header__casuals"> <b>CASUALS</b></li>
+                                <li> <a href="">Jackets</a> </li>
+                                <li> <a href="">Hoodies & Switshirts</a> </li>
+                                <li> <a href="">Polo Shirts</a> </li>
+                                <li> <a href="">Sportswear</a> </li>
+                                <li> <a href="">Trousers & Chinos</a> </li>
+                                <li> <a href="">T-shirts</a> </li>
+                            </ul>
+                            <ul>
+                                <li class="header__casuals"> <b>FORMAL</b> </li>
+                                <li> <a href="">Jackets</a> </li>
+                                <li> <a href="">Shirts</a> </li>
+                                <li> <a href="">Suit</a> </li>
+                                <li> <a href="">Trousers</a> </li>
+                            </ul>
+                        </div>
+                        <div class="header__men-offer">
+                            <p>AUTUMN SALE!<br>
+                                <span>UP TO 50% OFF</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="header__women-menu">
+                        <div class="header__list">
+                            <ul>
+                                <li class="header__casuals"> <b>CASUALS</b></li>
+                                <li> <a href="">Blouse</a> </li>
+                                <li> <a href="">Skirts</a> </li>
+                                <li> <a href="">Polo Shirts</a> </li>
+                                <li> <a href="">Sportswear</a> </li>
+                                <li> <a href="">Trousers & Chinos</a> </li>
+                                <li> <a href="">T-shirts</a> </li>
+                            </ul>
+                            <ul>
+                                <li class="header__casuals"> <b>FORMAL</b> </li>
+                                <li> <a href="">Jackets</a> </li>
+                                <li> <a href="">Shirts</a> </li>
+                                <li> <a href="">Suit</a> </li>
+                                <li> <a href="">Trousers</a> </li>
+                            </ul>
+                        </div>
+                        <div class="header__men-offer">
+                            <p>AUTUMN SALE!<br>
+                                <span>UP TO 50% OFF</span>
+                            </p>
+                        </div>
+                    </div>
+                    <a href="" class="header__button"> SHOP MEN'S COLLECTION</a>
+                </div>
+            </div>
+
+        </header>
+        <div class="content">
+            <div class="assortment">
+                <div class="assortment__items">
+                    <!--<a href="#shop-block-1">POPULAR</a>
+                    <a href="#shop-block-2" id="shop-block-2-link">NEW ARRIVALS</a>
+                    <a href="#">BEST SELLERS</a>
+                    <a href="#">SPECIAL OFFERS</a>
+                    <a href="#">COMING SOON</a>-->
+                    <input type="radio" id="shop-block-1-link" checked>
+                    <label for="shop-block-1-link">POPULAR</label>
+                    <input type="radio" id="shop-block-2-link">
+                    <label for="shop-block-2-link">NEW ARRIVALS</label>
+                    <input type="radio">
+                    <label for="shop-block-1-link">BEST SELLERS</label>
+                    <input type="radio">
+                    <label for="shop-block-1-link">SPECIAL OFFERS</label>
+                    <input type="radio">
+                    <label for="shop-block-1-link">COMING SOON</label>
+                </div>
+
+
+                <div class="assortment__body">
+                    <div class="assortment__shop-block" id="shop-block-1">
+                        <div class="assortment__first-part">
+                            <div class="assortment__first-row">
+                                <div class="assortment__images-1 images-first">
+                                    <div class="assortment__price-1"><sup>$</sup>12</div>
+                                    <div class="assortment__price-2"><sup>€</sup>8</div>
+                                    <div class="assortment__price-3"><sup>₽</sup>560</div>
+                                    <img src="img/main-page/thumb-front.png" alt=""
+                                        class="assortment__front front-first">
+                                    <img src="img/main-page/thumb-back.png" alt="" class="assortment__back back-first">
+                                    <img src="img/main-page/photo-1.png" alt="">
+                                    <div class="assortment__hint-1 hint-first">
+                                        <p><span>WOMENS BURNT ORANGE CASUAL TEE 29.95</span><br>
+                                            Classic casual t-shirts for women on the move.<br>
+                                            100% cotton.</p>
+                                        <div class="assortment__circle-row">
+                                            <div class="assortment__circle"> <i class="fa fa-shopping-cart"></i></div>
+                                            <div class="assortment__circle"><i class="fa fa-heart-o"></i></div>
+                                            <div class="assortment__circle"><i class="fa fa-compress"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="assortment__images-2 images-second">
+                                    <img src="img/main-page/thumb-front.png" alt=""
+                                        class="assortment__front front-second">
+                                    <img src="img/main-page/thumb-back.png" alt="" class="assortment__back back-second">
+                                    <img src="img/main-page/photo.png" alt="">
+                                    <div class="assortment__price-1"><sup>$</sup>12</div>
+                                    <div class="assortment__price-2"><sup>€</sup>8</div>
+                                    <div class="assortment__price-3"><sup>₽</sup>560</div>
+                                    <div class="assortment__hint-1 hint-second">
+                                        <p><span>WOMENS BURNT ORANGE CASUAL TEE 29.95</span><br>
+                                            Classic casual t-shirts for women on the move.<br>
+                                            100% cotton.</p>
+                                        <div class="assortment__circle-row">
+                                            <div class="assortment__circle"> <i class="fa fa-shopping-cart"></i></div>
+                                            <div class="assortment__circle"><i class="fa fa-heart-o"></i></div>
+                                            <div class="assortment__circle"><i class="fa fa-compress"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assortment__second-row">
+                                <div class="assortment__images-3 images-third">
+                                    <img src="img/main-page/photo-2.png" alt="">
+                                    <img src="img/main-page/thumb-front.png" alt=""
+                                        class="assortment__front-big-picture front-third">
+                                    <img src="img/main-page/thumb-back.png" alt=""
+                                        class="assortment__back-big-picture back-third">
+                                    <div class="assortment__price-1"><sup>$</sup>12</div>
+                                    <div class="assortment__price-2"><sup>€</sup>8</div>
+                                    <div class="assortment__price-3"><sup>₽</sup>560</div>
+                                    <div class="assortment__hint-2 hint-third">
+                                        <p><span>WOMENS BURNT ORANGE CASUAL TEE 29.95</span><br>
+                                            Classic casual t-shirts for women on the move.<br>
+                                            100% cotton.</p>
+                                        <div class="assortment__circle-row">
+                                            <div class="assortment__circle"> <i class="fa fa-shopping-cart"></i></div>
+                                            <div class="assortment__circle"><i class="fa fa-heart-o"></i></div>
+                                            <div class="assortment__circle"><i class="fa fa-compress"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="assortment__second-part">
+                            <div class="assortment__first-row">
+                                <div class="assortment__images-3 images-fourth">
+                                    <img src="img/main-page/thumb-front.png" alt=""
+                                        class="assortment__front-big-picture front-fourth">
+                                    <img src="img/main-page/thumb-back.png" alt=""
+                                        class="assortment__back-big-picture back-fourth">
+                                    <img src="img/main-page/photo-3.png" alt="">
+                                    <div class="assortment__price-1"><sup>$</sup>12</div>
+                                    <div class="assortment__price-2"><sup>€</sup>8</div>
+                                    <div class="assortment__price-3"><sup>₽</sup>560</div>
+                                    <div class="assortment__hint-2 hint-fourth">
+                                        <p><span>WOMENS BURNT ORANGE CASUAL TEE 29.95</span><br>
+                                            Classic casual t-shirts for women on the move.<br>
+                                            100% cotton.</p>
+                                        <div class="assortment__circle-row">
+                                            <div class="assortment__circle"> <i class="fa fa-shopping-cart"></i></div>
+                                            <div class="assortment__circle"><i class="fa fa-heart-o"></i></div>
+                                            <div class="assortment__circle"><i class="fa fa-compress"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assortment__second-row">
+                                <div class="assortment__images-1 images-fifth">
+                                    <img src="img/main-page/thumb-front.png" alt=""
+                                        class="assortment__front front-fifth">
+                                    <img src="img/main-page/thumb-back.png" alt="" class="assortment__back back-fifth">
+                                    <img src="img/main-page/photo-4.png" alt="">
+                                    <div class="assortment__price-1"><sup>$</sup>12</div>
+                                    <div class="assortment__price-2"><sup>€</sup>8</div>
+                                    <div class="assortment__price-3"><sup>₽</sup>560</div>
+                                    <div class="assortment__hint-1 hint-fifth">
+                                        <p><span>WOMENS BURNT ORANGE CASUAL TEE 29.95</span><br>
+                                            Classic casual t-shirts for women on the move.<br>
+                                            100% cotton.</p>
+                                        <div class="assortment__circle-row">
+                                            <div class="assortment__circle"> <i class="fa fa-shopping-cart"></i></div>
+                                            <div class="assortment__circle"><i class="fa fa-heart-o"></i></div>
+                                            <div class="assortment__circle"><i class="fa fa-compress"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="assortment__images-2 images-sixth">
+                                    <img src="img/main-page/thumb-front.png" alt=""
+                                        class="assortment__front front-sixth">
+                                    <img src="img/main-page/thumb-back.png" alt="" class="assortment__back front-sixth">
+                                    <img src="img/main-page/photo-5.png" alt="">
+                                    <div class="assortment__price-1"><sup>$</sup>12</div>
+                                    <div class="assortment__price-2"><sup>€</sup>8</div>
+                                    <div class="assortment__price-3"><sup>₽</sup>560</div>
+                                    <div class="assortment__hint-1 hint-sixth">
+                                        <p><span>WOMENS BURNT ORANGE CASUAL TEE 29.95</span><br>
+                                            Classic casual t-shirts for women on the move.<br>
+                                            100% cotton.</p>
+                                        <div class="assortment__circle-row">
+                                            <div class="assortment__circle"> <i class="fa fa-shopping-cart"></i></div>
+                                            <div class="assortment__circle"><i class="fa fa-heart-o"></i></div>
+                                            <div class="assortment__circle"><i class="fa fa-compress"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assortment__shop-block" id="shop-block-2">
+                        <div class="assortment__first-part">
+                            <div class="assortment__first-row">
+                                <div class="assortment__images-1 images-first">
+                                    <img src="img/main-page/photo-4.png" alt="">
+                                    <img src="img/main-page/thumb-front.png" alt=""
+                                        class="assortment__front front-first">
+                                    <img src="img/main-page/thumb-back.png" alt="" class="assortment__back back-first">
+                                    <div class="assortment__price-1"><sup>$</sup>12</div>
+                                    <div class="assortment__price-2"><sup>€</sup>8</div>
+                                    <div class="assortment__price-3"><sup>₽</sup>560</div>
+                                    <div class="assortment__hint-1 hint-first">
+                                        <p><span>WOMENS BURNT ORANGE CASUAL TEE 29.95</span><br>
+                                            Classic casual t-shirts for women on the move.<br>
+                                            100% cotton.</p>
+                                        <div class="assortment__circle-row">
+                                            <div class="assortment__circle"> <i class="fa fa-shopping-cart"></i></div>
+                                            <div class="assortment__circle"><i class="fa fa-heart-o"></i></div>
+                                            <div class="assortment__circle"><i class="fa fa-compress"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="assortment__images-2 images-second">
+                                    <img src="img/main-page/photo-5.png" alt="">
+                                    <img src="img/main-page/thumb-front.png" alt=""
+                                        class="assortment__front front-first">
+                                    <img src="img/main-page/thumb-back.png" alt="" class="assortment__back back-first">
+                                    <div class="assortment__price-1"><sup>$</sup>12</div>
+                                    <div class="assortment__price-2"><sup>€</sup>8</div>
+                                    <div class="assortment__price-3"><sup>₽</sup>560</div>
+                                    <div class="assortment__hint-1 hint-second">
+                                        <p><span>WOMENS BURNT ORANGE CASUAL TEE 29.95</span><br>
+                                            Classic casual t-shirts for women on the move.<br>
+                                            100% cotton.</p>
+                                        <div class="assortment__circle-row">
+                                            <div class="assortment__circle"> <i class="fa fa-shopping-cart"></i></div>
+                                            <div class="assortment__circle"><i class="fa fa-heart-o"></i></div>
+                                            <div class="assortment__circle"><i class="fa fa-compress"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assortment__second-row">
+                                <div class="assortment__images-3 images-third">
+                                    <img src="img/main-page/photo-2.png" alt="">
+                                    <img src="img/main-page/thumb-front.png" alt=""
+                                        class="assortment__front-big-picture front-first">
+                                    <img src="img/main-page/thumb-back.png" alt=""
+                                        class="assortment__back-big-picture back-first">
+                                    <div class="assortment__price-1"><sup>$</sup>12</div>
+                                    <div class="assortment__price-2"><sup>€</sup>8</div>
+                                    <div class="assortment__price-3"><sup>₽</sup>560</div>
+                                    <div class="assortment__hint-2 hint-third">
+                                        <p><span>WOMENS BURNT ORANGE CASUAL TEE 29.95</span><br>
+                                            Classic casual t-shirts for women on the move.<br>
+                                            100% cotton.</p>
+                                        <div class="assortment__circle-row">
+                                            <div class="assortment__circle"> <i class="fa fa-shopping-cart"></i></div>
+                                            <div class="assortment__circle"><i class="fa fa-heart-o"></i></div>
+                                            <div class="assortment__circle"><i class="fa fa-compress"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="assortment__second-part">
+                            <div class="assortment__first-row">
+                                <div class="assortment__images-3 images-fourth">
+                                    <img src="img/main-page/photo-3.png" alt="">
+                                    <img src="img/main-page/thumb-front.png" alt=""
+                                        class="assortment__front-big-picture front-first">
+                                    <img src="img/main-page/thumb-back.png" alt=""
+                                        class="assortment__back-big-picture back-first">
+                                    <div class="assortment__price-1"><sup>$</sup>12</div>
+                                    <div class="assortment__price-2"><sup>€</sup>8</div>
+                                    <div class="assortment__price-3"><sup>₽</sup>560</div>
+                                    <div class="assortment__hint-2 hint-fourth">
+                                        <p><span>WOMENS BURNT ORANGE CASUAL TEE 29.95</span><br>
+                                            Classic casual t-shirts for women on the move.<br>
+                                            100% cotton.</p>
+                                        <div class="assortment__circle-row">
+                                            <div class="assortment__circle"> <i class="fa fa-shopping-cart"></i></div>
+                                            <div class="assortment__circle"><i class="fa fa-heart-o"></i></div>
+                                            <div class="assortment__circle"><i class="fa fa-compress"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assortment__second-row">
+                                <div class="assortment__images-1 images-fifth">
+                                    <img src="img/main-page/photo-1.png" alt="">
+                                    <img src="img/main-page/thumb-front.png" alt=""
+                                        class="assortment__front front-first">
+                                    <img src="img/main-page/thumb-back.png" alt="" class="assortment__back back-first">
+                                    <div class="assortment__price-1"><sup>$</sup>12</div>
+                                    <div class="assortment__price-2"><sup>€</sup>8</div>
+                                    <div class="assortment__price-3"><sup>₽</sup>560</div>
+                                    <div class="assortment__hint-1 hint-fifth">
+                                        <p><span>WOMENS BURNT ORANGE CASUAL TEE 29.95</span><br>
+                                            Classic casual t-shirts for women on the move.<br>
+                                            100% cotton.</p>
+                                        <div class="assortment__circle-row">
+                                            <div class="assortment__circle"> <i class="fa fa-shopping-cart"></i></div>
+                                            <div class="assortment__circle"><i class="fa fa-heart-o"></i></div>
+                                            <div class="assortment__circle"><i class="fa fa-compress"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="assortment__images-2 images-sixth">
+                                    <img src="img/main-page/photo.png" alt="">
+                                    <img src="img/main-page/thumb-front.png" alt=""
+                                        class="assortment__front front-first">
+                                    <img src="img/main-page/thumb-back.png" alt="" class="assortment__back back-first">
+                                    <div class="assortment__price-1"><sup>$</sup>12</div>
+                                    <div class="assortment__price-2"><sup>€</sup>8</div>
+                                    <div class="assortment__price-3"><sup>₽</sup>560</div>
+                                    <div class="assortment__hint-1 hint-sixth">
+                                        <p><span>WOMENS BURNT ORANGE CASUAL TEE 29.95</span><br>
+                                            Classic casual t-shirts for women on the move.<br>
+                                            100% cotton.</p>
+                                        <div class="assortment__circle-row">
+                                            <div class="assortment__circle"> <i class="fa fa-shopping-cart"></i></div>
+                                            <div class="assortment__circle"><i class="fa fa-heart-o"></i></div>
+                                            <div class="assortment__circle"><i class="fa fa-compress"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="show-now">
+                <div class="lookbook">
+                    <img src="img/main-page/REPLACE.png">
+                    <div class="lookbook__text">
+                        <span class="lookbook__mens">MEN'S</span><br>
+                        <span class="lookbook_mens-bottom">LOOKBOOK</span>
+                        <p>Lorem ipsum dolor, sit amet consectetur<br>
+                            adipisicing elit. Porro laboriosam non, <br>
+                            maxime repellat atque veritatis<br>
+                            vel assumenda quibusdam commodi ipsa<br>
+                        </p>
+                        <a href="" class="lookbook__button">VIEW NOW</a>
+                    </div>
+                </div>
+                <div class="lookbook lookbook__second-view">
+                    <img src="img/main-page/REPLACE copy.png">
+                    <div class="lookbook__text">
+                        <span class="lookbook__mens">MEN'S</span><br>
+                        <span class="lookbook_mens-bottom">LOOKBOOK</span>
+                        <p>Lorem ipsum dolor, sit amet consectetur<br>
+                            adipisicing elit. Porro laboriosam non, <br>
+                            maxime repellat atque veritatis<br>
+                            vel assumenda quibusdam commodi ipsa<br>
+                        </p>
+
+                        <a href="" class="lookbook__button">VIEW NOW</a>
+
+                    </div>
+                </div>
+                <div class="lookbook">
+                    <img src="img/main-page/photo silhouette.png">
+                    <div class="lookbook__text">
+                        <span class="lookbook__mens">MEN'S</span><br>
+                        <span class="lookbook_mens-bottom">LOOKBOOK</span>
+                        <p>Lorem ipsum dolor, sit amet consectetur<br>
+                            adipisicing elit. Porro laboriosam non, <br>
+                            maxime repellat atque veritatis<br>
+                            vel assumenda quibusdam commodi ipsa<br>
+                        </p>
+                        <a href="" class="lookbook__button">VIEW NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="links-menu">
+                <div>
+                    <span>INFORMATION</span><br>
+                    <a href="#">The band</a> <br>
+                    <a href="#">Local stores</a> <br>
+                    <a href="#">Customer service</a> <br>
+                    <a href="#">Privasy & cookies</a> <br>
+                    <a href="#">Site map</a> <br>
+                </div>
+                <div>
+                    <span>WHY BUY FROM US</span><br>
+                    <a href="#">Shipping & returns</a> <br>
+                    <a href="#">Secure shopping</a> <br>
+                    <a href="#">Testimonials</a> <br>
+                    <a href="#">Award winning</a> <br>
+                    <a href="#">Ethical trading</a> <br>
+                </div>
+                <div>
+                    <span>YOUR ACCOUNT</span><br>
+                    <a href="#">Sign in</a> <br>
+                    <a href="#">Register</a> <br>
+                    <a href="#">View cart</a> <br>
+                    <a href="#">View your lookbook</a> <br>
+                    <a href="#">Track an order</a> <br>
+                    <a href="#">Update infortation</a> <br>
+                </div>
+                <div>
+                    <span>LOOKBOOK</span><br>
+                    <a href="#">Latest post</a> <br>
+                    <a href="#">Men's lookbook</a> <br>
+                    <a href="#">Women's lookbook</a> <br>
+                    <a href="#">Lookbooks RSS feed</a> <br>
+                    <a href="#">View your lookbook</a> <br>
+                    <a href="#">Delete your lookbook</a> <br>
+                </div>
+                <div>
+                    <span>CONTACT DETAILS</span><br>
+                    Head Office: Avenue Fashion,<br>
+                    180-182 Regent Street, London.<br>
+                    Telephone: 0123-456-789<br>
+                    Email: support@yourwebsite.ru<br>
+                </div>
+            </div>
+            <div class="social-row">
+                <div class="social-row__banner">
+                    <p>
+                        <span>AWARD WINNER</span> <br>
+                        FASHION AWARDS 2016
+                    </p>
+                </div>
+                <div class="social-row__icons">
+                    <div class="social-row__icons-row">
+                        <a href="#">
+                            <i class="fa fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-pinterest fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="Avenue-fashion">
+                <div>
+                    <p>2016 Avenue Fashion</p>
+                </div>
+                <div class="Avenue-fastion__avtor">
+                    <p>Design by RobbyDesigins.com</p>
+                    <p>Dev by Loremipsum.com</p>
+                </div>
+            </div>
+        </footer>
+    </wrapper>
+</body>
+
+</html>
