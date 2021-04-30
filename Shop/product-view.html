@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/view-product.css" type="text/css">
+    <script type="text/javascript" src="Js//jQuery.js"></script>
+    <script type="text/javascript" src="Js//product-view.js"></script>
+    <script type="text/javascript" src="Js//code.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>View product</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__first-row">
+                <div class="menu-burger">
+                    <span></span>
+                </div>
+                <div class="header__currency">
+                    <p>Currency:</p>
+                    <div class="header__select" data-state="">
+                        <div class="header__select__title" data-default="Option 0">UA</div>
+                        <div class="header__select__content">
+                            <input id="singleSelect0" class="header__select__input" type="radio" name="singleSelect"
+                                checked />
+                            <label for="singleSelect0" class="header__select__label">UA</label>
+                            <input id="singleSelect1" class="header__select__input" type="radio" name="singleSelect" />
+                            <label for="singleSelect1" class="header__select__label">RUB</label>
+                            <input id="singleSelect3" class="header__select__input" type="radio" name="singleSelect" />
+                            <label for="singleSelect3" class="header__select__label">EUR</label>
+                            <input id="singleSelect4" class="header__select__input" type="radio" name="singleSelect" />
+                            <label for="singleSelect4" class="header__select__label">UA</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__register-and-sign">
+                    <p><a href="sign.html" class="Register">Register</a></p>
+                    <p><a href="sign.html" class="Sign-in">Sign In</a></p>
+                </div>
+                <div class="header__down-slide">
+                    <nav class="nav-mobile">
+                        <ul>
+                            <li id="MENS-mobile">MENS</li>
+                            <ul class="header__mens-list">
+                                <li><a href="#">Jackets</a> </li>
+                                <li><a href="#">Hoodies & Switshorts</a></li>
+                                <li><a href="#">Polo Shirts</a></li>
+                                <li><a href="#">Sportswear</a> </li>
+                                <li><a href="#">Trousers & Chinos</a> </li>
+                                <li><a href="#">T-Shirts</a></li>
+                            </ul>
+                            <li id="WOOMENS-mobile">WOOMENS</li>
+                            <ul class="header__womens-list">
+                                <li><a href="#">Jackets</a> </li>
+                                <li><a href="#">Hoodies & Switshorts</a></li>
+                                <li><a href="#">Polo Shirts</a></li>
+                                <li><a href="#">Sportswear</a> </li>
+                                <li><a href="#">Trousers & Chinos</a> </li>
+                                <li><a href="#">T-Shirts</a></li>
+                            </ul>
+                            <li>THE BRAND</li>
+                            <li>LOKAL STORIES</li>
+                            <li>LOOK BOOK</li>
+                        </ul>
+                    </nav>
+    
+                </div>
+                <div class="header__cart">
+                    <i class="fa fa-shopping-cart"></i>
+                    <p>empty</p>
+                    <i class="fa fa-angle-down cart-angle"></i>
+                </div>
+            </div>
+            <div class="header__second-row">
+                <div class="header__logo">
+                    <img src="img/main-page/logo.png" alt="">
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <div class="Mens"> MENS<br> <i class="fa fa-angle-down"></i></div>
+                        </li>
+                        <li>
+                            <div class="Womens">WOMENS<br> <i class="fa fa-angle-down"></i></div>
+    
+                        </li>
+                        <li id="The-band">
+                            <div><a href="the-brand.html">THE BRAND</a></div>
+                        </li>
+                        <li>
+                            <div class="Local-stories"> <a href="local-stories.html">LOCAL STORES</a> <br></div>
+    
+                        </li>
+                        <li>
+                            <div class="Look-book"> <a href="lookbook.html">LOOK BOOK</a> <br></div>
+    
+                        </li>
+                    </ul>
+                    <div class="header__nav-low-list">
+                        <div class="header__men-menu">
+                            <div class="header__list">
+                                <ul>
+                                    <li class="header__casuals"> <b>CASUALS</b></li>
+                                    <li> <a href="">Jackets</a> </li>
+                                    <li> <a href="">Hoodies & Switshirts</a> </li>
+                                    <li> <a href="">Polo Shirts</a> </li>
+                                    <li> <a href="">Sportswear</a> </li>
+                                    <li> <a href="">Trousers & Chinos</a> </li>
+                                    <li> <a href="">T-shirts</a> </li>
+                                </ul>
+                                <ul>
+                                    <li class="header__casuals"> <b>FORMAL</b> </li>
+                                    <li> <a href="">Jackets</a> </li>
+                                    <li> <a href="">Shirts</a> </li>
+                                    <li> <a href="">Suit</a> </li>
+                                    <li> <a href="">Trousers</a> </li>
+                                </ul>
+                            </div>
+                            <div class="header__men-offer">
+                                <p>AUTUMN SALE!<br>
+                                    <span>UP TO 50% OFF</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="header__women-menu">
+                            <div class="header__list">
+                                <ul>
+                                    <li class="header__casuals"> <b>CASUALS</b></li>
+                                    <li> <a href="">Blouse</a> </li>
+                                    <li> <a href="">Skirts</a> </li>
+                                    <li> <a href="">Polo Shirts</a> </li>
+                                    <li> <a href="">Sportswear</a> </li>
+                                    <li> <a href="">Trousers & Chinos</a> </li>
+                                    <li> <a href="">T-shirts</a> </li>
+                                </ul>
+                                <ul>
+                                    <li class="header__casuals"> <b>FORMAL</b> </li>
+                                    <li> <a href="">Jackets</a> </li>
+                                    <li> <a href="">Shirts</a> </li>
+                                    <li> <a href="">Suit</a> </li>
+                                    <li> <a href="">Trousers</a> </li>
+                                </ul>
+                            </div>
+                            <div class="header__men-offer">
+                                <p>AUTUMN SALE!<br>
+                                    <span>UP TO 50% OFF</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="header__background">
+                <img src="img/the-brand/the brand.png" alt="" class="main-image">
+            </div>
+    
+        </header>
+        <div class="content">
+            <div class="view-product">
+                <div class="view-product__gallery">
+                    <div class="view-product__slides">
+                        <img src="img/view-product/default.png" alt="" class="view-product__first-slide">
+                        <img src="img/view-product/default2.png" alt="" class="view-product__second-slide">
+                        <img src="img/view-product/default.png" alt="" class="view-product__third-slide">
+                        <img src="img/view-product/default2.png" alt="" class="view-product__fourth-slide">
+                    </div>
+                    <div class="view-product__arrows-row">
+                        <div class="view-product__left-arrow"><img src="img/view-product/prev.png" alt=""></div>
+                        <div class="view-product__right-arrow"><img src="img/view-product/next.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="view-product__description">
+                    <div class="view-product__title">Ave classic sweatshirt</div>
+                    
+                    <div class="view-product__social-cost">
+                        <div class="view-product__social-row">
+                            <div class="view-product__stars">
+                                <div class="view-product__rating-area">
+                                    <input type="radio" id="star-5" name="rating" value="5">
+                                    <label for="star-5" title="Оценка «5»"></label>	
+                                    <input type="radio" id="star-4" name="rating" value="4">
+                                    <label for="star-4" title="Оценка «4»"></label>    
+                                    <input type="radio" id="star-3" name="rating" value="3">
+                                    <label for="star-3" title="Оценка «3»"></label>  
+                                    <input type="radio" id="star-2" name="rating" value="2">
+                                    <label for="star-2" title="Оценка «2»"></label>    
+                                    <input type="radio" id="star-1" name="rating" value="1">
+                                    <label for="star-1" title="Оценка «1»"></label>
+                                </div>
+                            </div>
+                            <div class="view-product__counter-like">
+                                3 Review(s)
+                            </div>
+                            <div class="view-product__add-collection">
+                                <a href="">Add a Review</a> 
+                            </div>
+                            <div class="view-product__social-icons">
+                                <ul>
+                                    <li>Share:</li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-odnoklassniki"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            
+                            
+                        </div>  
+                        <div class="view-product__cost">
+                            <sup>€</sup> <span>107</span>  <sup>€</sup>89.99 
+                        </div>
+                    </div>
+                    
+                    <div class="view-product__tags">
+                       <span>Availability:</span>  In stock <br>
+                       <span>Product Code:</span>  #499577 <br>
+                       <span>Tags:</span>  <a href="">Classic</a> , <a href="">Casual</a>, <a href="">V-neck</a> , <a href="">Loose</a>  <br>
+                    </div>
+                    <div class="view-product__characteristics">
+                        Donec sem lorem laoreet tempor un risus vitae, rutrum sodales nibh suspendisse est congue metus nunc, id viverra elit loreti rhoncus quis consecteur es. Donec pulvinar tempor lorem a pretium justo interdum.
+
+                    </div>
+                    <ul class="view-product__benefits">
+                        <li> Elasticated cuffs</li>
+                        <li>Casual fit</li>
+                        <li>100% Cotton</li>
+                        <li>Free shipping with 4 days delivery</li>
+                    </ul>
+                    <div class="view-product__listbox">
+                        <div>
+                            <p>Colour</p> 
+                            <select class="view-product__select">
+                                <option value="1">green</option>
+                                <option value="1">yellow</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <p>Size</p> 
+                            <select class="view-product__select">
+                                <option value="3">43</option>
+                                <option value="4">44</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p>QTY</p> 
+                            <div class="view-product__select-qty">
+                                <div class="view-product__select-qty-text">
+                                    
+                                </div>
+                                <div>
+                                    <div class="view-product__select-arrow-up">
+                                        <i class="fa fa-angle-up"></i>
+                                    </div>
+                                    <div class="view-product__select-arrow-down">
+                                        <i class="fa fa-angle-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="view-product__button-row">
+                        <a href="" class="view-product__add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                        <a href="" class="view-product__add-to-lookbook"><i class="fa fa-heart-o"></i>Add to lookbook</a>
+                    </div>
+                    <div class="view-product__bottom-row">
+                        <a href=""><i class="fa fa-compress"></i> Add to compare</a>
+                        
+                    </div> 
+                </div>
+            </div>
+            <div class="tab">
+                <div class="tab__title-row">
+                    <div class="tab__first">Description</div>
+                    <div class="tab__second">Video</div>
+                    <div class="tab__third">Size & Specs</div>
+                    <div class="tab__fourth">Delivery & returns</div>
+                    <div class="tab__fifth">Reviews</div>
+                </div>
+                <div class="tab__container">
+                    <div class="tab__text-1">
+                        <span>Nunc egestas posuere enim, eu maximus erat posuere eget</span>
+                        <p>
+                            Sed ut mi mollis, consequat nulla lacinia, hendrerit turpis. Nulla sapien magna, interdum quis pretium nec, pharetra at felis. 
+                            Curabitur dictum sapien est, eget ultricies turpis porta vel. Nam suscipit nec lacus sed imperdiet. Vestibulum a purus risus. 
+                            Nulla et dictum augue, nec efficitur mi. Nam sit amet pretium elit. Aliquam congue, ligula id vehicula vestibulum, orci ex vulputate lacus, ac malesuada 
+                            elit dolor eget ex. Sed quis aliquet risus, ut cursus lectus. In eget lorem tellus.
+                        </p>
+                        
+                        <p>
+                            Quisque eleifend varius nisi nec sagittis. Nulla ullamcorper imperdiet justo, ut venenatis purus lobortis ut. Nunc sagittis 
+                            urna et hendrerit sodales. Nunc molestie risus nec fringilla lacinia. Nulla facilisi. Etiam neque velit, tristique eget sollicitudin eget, 
+                            placerat at metus. Proin dictum lobortis velit, id suscipit orci faucibus ut. Aliquam erat volutpat. Vivamus feugiat justo in diam placerat, 
+                            id dignissim elit auctor. Vestibulum scelerisque sem et lobortis ultricies. Morbi suscipit nulla urna. Suspendisse potenti. Nullam varius quam 
+                            sed nisl dignissim, vel faucibus ipsum blandit. Vivamus at suscipit augue. Nam finibus gravida lorem eu viverra. Praesent rhoncus imperdiet ultricies. 
+                            Nullam pretium cursus augue auctor vulputate. Quisque a convallis diam commodo eget diam id, eleifend dictum libero. Etiam varius, nisi vel dignissim sodales, 
+                            enim dui posuere mauris, in aliquet lorem eros eget neque.
+                        </p>
+                        
+                    </div>
+                    <div class="tab__text-2">
+                        <span>Nunc egestas posuere enim, eu maximus erat posuere eget</span>
+                        <p>
+                            Sed ut mi mollis, consequat nulla lacinia, hendrerit turpis. Nulla sapien magna, interdum quis pretium nec, pharetra at felis. 
+                            Curabitur dictum sapien est, eget ultricies turpis porta vel. Nam suscipit nec lacus sed imperdiet. Vestibulum a purus risus. 
+                            Nulla et dictum augue, nec efficitur mi. Nam sit amet pretium elit. Aliquam congue, ligula id vehicula vestibulum, orci ex vulputate lacus, ac malesuada 
+                            elit dolor eget ex. Sed quis aliquet risus, ut cursus lectus. In eget lorem tellus.
+                        </p>
+                        
+                        <p>
+                            Quisque eleifend varius nisi nec sagittis. Nulla ullamcorper imperdiet justo, ut venenatis purus lobortis ut. Nunc sagittis 
+                            urna et hendrerit sodales. Nunc molestie risus nec fringilla lacinia. Nulla facilisi. Etiam neque velit, tristique eget sollicitudin eget, 
+                            placerat at metus. Proin dictum lobortis velit, id suscipit orci faucibus ut. Aliquam erat volutpat. Vivamus feugiat justo in diam placerat, 
+                            id dignissim elit auctor. Vestibulum scelerisque sem et lobortis ultricies. Morbi suscipit nulla urna. Suspendisse potenti. Nullam varius quam 
+                            sed nisl dignissim, vel faucibus ipsum blandit. Vivamus at suscipit augue. Nam finibus gravida lorem eu viverra. Praesent rhoncus imperdiet ultricies. 
+                            Nullam pretium cursus augue auctor vulputate. Quisque a convallis diam commodo eget diam id, eleifend dictum libero. Etiam varius, nisi vel dignissim sodales, 
+                            enim dui posuere mauris, in aliquet lorem eros eget neque.
+                        </p>
+                    </div>
+                    <div class="tab__text-3">
+                        <span>Nunc egestas posuere enim, eu maximus erat posuere eget</span>
+                        <p>
+                            Sed ut mi mollis, consequat nulla lacinia, hendrerit turpis. Nulla sapien magna, interdum quis pretium nec, pharetra at felis. 
+                            Curabitur dictum sapien est, eget ultricies turpis porta vel. Nam suscipit nec lacus sed imperdiet. Vestibulum a purus risus. 
+                            Nulla et dictum augue, nec efficitur mi. Nam sit amet pretium elit. Aliquam congue, ligula id vehicula vestibulum, orci ex vulputate lacus, ac malesuada 
+                            elit dolor eget ex. Sed quis aliquet risus, ut cursus lectus. In eget lorem tellus.
+                        </p>
+                        
+                        <p>
+                            Quisque eleifend varius nisi nec sagittis. Nulla ullamcorper imperdiet justo, ut venenatis purus lobortis ut. Nunc sagittis 
+                            urna et hendrerit sodales. Nunc molestie risus nec fringilla lacinia. Nulla facilisi. Etiam neque velit, tristique eget sollicitudin eget, 
+                            placerat at metus. Proin dictum lobortis velit, id suscipit orci faucibus ut. Aliquam erat volutpat. Vivamus feugiat justo in diam placerat, 
+                            id dignissim elit auctor. Vestibulum scelerisque sem et lobortis ultricies. Morbi suscipit nulla urna. Suspendisse potenti. Nullam varius quam 
+                            sed nisl dignissim, vel faucibus ipsum blandit. Vivamus at suscipit augue. Nam finibus gravida lorem eu viverra. Praesent rhoncus imperdiet ultricies. 
+                            Nullam pretium cursus augue auctor vulputate. Quisque a convallis diam commodo eget diam id, eleifend dictum libero. Etiam varius, nisi vel dignissim sodales, 
+                            enim dui posuere mauris, in aliquet lorem eros eget neque.
+                        </p>
+                    </div>
+                    <div class="tab__text-4">
+                        <span>Nunc egestas posuere enim, eu maximus erat posuere eget</span>
+                        <p>
+                            Sed ut mi mollis, consequat nulla lacinia, hendrerit turpis. Nulla sapien magna, interdum quis pretium nec, pharetra at felis. 
+                            Curabitur dictum sapien est, eget ultricies turpis porta vel. Nam suscipit nec lacus sed imperdiet. Vestibulum a purus risus. 
+                            Nulla et dictum augue, nec efficitur mi. Nam sit amet pretium elit. Aliquam congue, ligula id vehicula vestibulum, orci ex vulputate lacus, ac malesuada 
+                            elit dolor eget ex. Sed quis aliquet risus, ut cursus lectus. In eget lorem tellus.
+                        </p>
+                        
+                        <p>
+                            Quisque eleifend varius nisi nec sagittis. Nulla ullamcorper imperdiet justo, ut venenatis purus lobortis ut. Nunc sagittis 
+                            urna et hendrerit sodales. Nunc molestie risus nec fringilla lacinia. Nulla facilisi. Etiam neque velit, tristique eget sollicitudin eget, 
+                            placerat at metus. Proin dictum lobortis velit, id suscipit orci faucibus ut. Aliquam erat volutpat. Vivamus feugiat justo in diam placerat, 
+                            id dignissim elit auctor. Vestibulum scelerisque sem et lobortis ultricies. Morbi suscipit nulla urna. Suspendisse potenti. Nullam varius quam 
+                            sed nisl dignissim, vel faucibus ipsum blandit. Vivamus at suscipit augue. Nam finibus gravida lorem eu viverra. Praesent rhoncus imperdiet ultricies. 
+                            Nullam pretium cursus augue auctor vulputate. Quisque a convallis diam commodo eget diam id, eleifend dictum libero. Etiam varius, nisi vel dignissim sodales, 
+                            enim dui posuere mauris, in aliquet lorem eros eget neque.
+                        </p>
+                    </div>
+                    <div class="tab__text-5">
+                        <span>Nunc egestas posuere enim, eu maximus erat posuere eget</span>
+                        <p>
+                            Sed ut mi mollis, consequat nulla lacinia, hendrerit turpis. Nulla sapien magna, interdum quis pretium nec, pharetra at felis. 
+                            Curabitur dictum sapien est, eget ultricies turpis porta vel. Nam suscipit nec lacus sed imperdiet. Vestibulum a purus risus. 
+                            Nulla et dictum augue, nec efficitur mi. Nam sit amet pretium elit. Aliquam congue, ligula id vehicula vestibulum, orci ex vulputate lacus, ac malesuada 
+                            elit dolor eget ex. Sed quis aliquet risus, ut cursus lectus. In eget lorem tellus.
+                        </p>
+                        
+                        <p>
+                            Quisque eleifend varius nisi nec sagittis. Nulla ullamcorper imperdiet justo, ut venenatis purus lobortis ut. Nunc sagittis 
+                            urna et hendrerit sodales. Nunc molestie risus nec fringilla lacinia. Nulla facilisi. Etiam neque velit, tristique eget sollicitudin eget, 
+                            placerat at metus. Proin dictum lobortis velit, id suscipit orci faucibus ut. Aliquam erat volutpat. Vivamus feugiat justo in diam placerat, 
+                            id dignissim elit auctor. Vestibulum scelerisque sem et lobortis ultricies. Morbi suscipit nulla urna. Suspendisse potenti. Nullam varius quam 
+                            sed nisl dignissim, vel faucibus ipsum blandit. Vivamus at suscipit augue. Nam finibus gravida lorem eu viverra. Praesent rhoncus imperdiet ultricies. 
+                            Nullam pretium cursus augue auctor vulputate. Quisque a convallis diam commodo eget diam id, eleifend dictum libero. Etiam varius, nisi vel dignissim sodales, 
+                            enim dui posuere mauris, in aliquet lorem eros eget neque.
+                        </p>
+                    </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="links-menu">
+            <div class="footer__menu">
+                <span>INFORMATION</span><br>
+                <a href="#">The band</a> <br>
+                <a href="#">Local stores</a> <br>
+                <a href="#">Customer service</a> <br>
+                <a href="#">Privasy & cookies</a> <br>
+                <a href="#">Site map</a> <br>
+            </div>
+            <div class="footer__menu">
+                <span>WHY BUY FROM US</span><br>
+                <a href="#">Shipping & returns</a> <br>
+                <a href="#">Secure shopping</a> <br>
+                <a href="#">Testimonials</a> <br>
+                <a href="#">Award winning</a> <br>
+                <a href="#">Ethical trading</a> <br>
+            </div>
+            <div class="footer__menu">
+                <span>YOUR ACCOUNT</span><br>
+                <a href="#">Sign in</a> <br>
+                <a href="#">Register</a> <br>
+                <a href="#">View cart</a> <br>
+                <a href="#">View your lookbook</a> <br>
+                <a href="#">Track an order</a> <br>
+                <a href="#">Update infortation</a> <br>
+            </div>
+            <div class="footer__menu">
+                <span>LOOKBOOK</span><br>
+                <a href="#">Latest post</a> <br>
+                <a href="#">Men's lookbook</a> <br>
+                <a href="#">Women's lookbook</a> <br>
+                <a href="#">Lookbooks RSS feed</a> <br>
+                <a href="#">View your lookbook</a> <br>
+                <a href="#">Delete your lookbook</a> <br>
+            </div>
+            <div class="footer__contact">
+                <span>CONTACT DETAILS</span><br>
+                Head Office: Avenue Fashion,<br>
+                180-182 Regent Street, London.<br>
+                Telephone: 0123-456-789<br>
+                Email: support@yourwebsite.ru<br>
+            </div>
+            <div class="social-row">
+                <div class="social-row__banner">
+                    <p>
+                        <span>AWARD WINNER</span> <br>
+                        FASHION AWARDS 2016
+                    </p>
+                </div>
+                <div class="social-row__icons">
+                    <div class="social-row__icons-row">
+                        <a href="#">
+                            <i class="fa fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-pinterest fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Avenue-fashion">
+            <div>
+                <p>2016 Avenue Fashion</p>
+            </div>
+            <div class="Avenue-fashion__avtor">
+                <p>Design by RobbyDesigins.com</p>
+                <p>Dev by Loremipsum.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
