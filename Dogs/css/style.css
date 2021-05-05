@@ -16,10 +16,12 @@ body {
   height: 922px;
   position: relative;
   background-color: #E5E5E5;
+  overflow: hidden;
 }
 
 .header__high-row {
   width: 100%;
+  padding-top: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,8 +39,8 @@ body {
   font-family: 'Merriweather', serif;
   font-size: 14px;
   color: black;
-  margin-left: 53%;
   margin-top: 24px;
+  margin-left: auto;
 }
 
 .header__menu ul {
@@ -57,20 +59,36 @@ body {
   color: black;
 }
 
+.header__left-part {
+  width: 20%;
+}
+
+.header__right-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  padding-right: 10%;
+}
+
 .header__menu-burger {
   cursor: pointer;
-  margin-left: 10%;
-  padding-top: 2%;
+  z-index: 2;
+  margin-left: 20px;
+  padding-top: 30px;
+  display: none;
+}
+
+.header__menu-burger img {
+  margin-left: 5px;
 }
 
 .header__hide-menu {
-  display: inline-block;
-  position: absolute;
+  display: block;
   opacity: 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  top: 8%;
-  left: 88.1%;
+  margin-left: -78px;
   width: 200px;
 }
 
@@ -106,6 +124,7 @@ body {
 }
 
 .header__training, .header .header__offendiens, .header .header__breeders, .header .header__guard {
+  z-index: 2;
   position: absolute;
 }
 
@@ -130,34 +149,36 @@ body {
 }
 
 .header__training {
+  display: inline-block;
   left: 268px;
   top: 131px;
 }
 
 .header__offendiens {
+  display: inline-block;
   left: 176px;
   top: 328px;
 }
 
 .header__breeders {
+  display: inline-block;
   left: 268px;
   top: 529px;
 }
 
 .header__guard {
-  left: 1429px;
-  top: 241px;
+  display: inline-block;
+  left: 75%;
+  top: 25%;
 }
 
 .header__reference {
+  display: inline-block;
   position: absolute;
   left: 120px;
   top: 753px;
   font-family: 'Merriweather', serif;
   font-size: 14px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .header__reference img {
@@ -172,20 +193,213 @@ body {
 }
 
 .header__model {
+  display: inline-block;
   background-color: #E5E5E5;
   z-index: 3;
-  margin-left: 27%;
+}
+
+.header__fon {
+  display: none;
+}
+
+@media (max-width: 1910px) {
+  .header__model {
+    display: none;
+  }
+  .header__fon {
+    display: inline-block;
+    position: absolute;
+    width: 60%;
+    left: 36%;
+    top: 13%;
+  }
+  .header__fon img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    height: 725px;
+  }
+  .header__logo {
+    margin-left: 50px;
+  }
+  .header__training {
+    left: 12%;
+    top: 16%;
+  }
+  .header__offendiens {
+    left: 4%;
+    top: 43%;
+  }
+  .header__breeders {
+    left: 17%;
+    top: 71%;
+  }
+  .header__guard {
+    left: 67%;
+    top: 21%;
+  }
+  .header__reference {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 2%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 93%;
+    font-size: 10px;
+  }
+  .header__reference img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 545px;
+  }
+  .header__training a, .header .header__offendiens a, .header .header__breeders a, .header .header__guard a {
+    font-size: 30px;
+  }
+  .header__training p, .header .header__offendiens p, .header .header__breeders p, .header .header__guard p {
+    font-size: 11px;
+  }
+  .header__reference {
+    top: 92%;
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    height: 395px;
+  }
+  .header__training a, .header .header__offendiens a, .header .header__breeders a, .header .header__guard a {
+    font-size: 20px;
+  }
+  .header__training p, .header .header__offendiens p, .header .header__breeders p, .header .header__guard p {
+    font-size: 7px;
+  }
+  .header__logo {
+    margin-left: 5px;
+  }
+  .header__logo img {
+    width: 141px;
+  }
+  .header__menu-burger {
+    margin-left: 197px;
+  }
+  .header__right-part {
+    padding-right: 14px;
+  }
+  .header__menu {
+    font-size: 11px;
+    margin-top: 11px;
+  }
+  .header__menu ul li {
+    margin-left: 17px;
+  }
+  .header__menu li {
+    margin-left: 15px;
+  }
+  .header__fon {
+    width: 77%;
+    left: 24%;
+    top: 25%;
+  }
+  .header__training {
+    left: 7%;
+    top: 18%;
+  }
+  .header__offendiens {
+    left: 3%;
+    top: 49%;
+  }
+  .header__breeders {
+    left: 6%;
+    top: 73%;
+  }
+  .header__guard {
+    left: 60%;
+    top: 25%;
+  }
+  .header__reference {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    height: 420px;
+  }
+  .header__menu-burger {
+    margin-left: 185px;
+  }
+  .header__hide-menu a {
+    font-size: 12px;
+  }
+  .header__right-part {
+    padding-right: 7px;
+  }
+  .header__fon {
+    width: 101%;
+    left: 64%;
+    top: 10%;
+  }
+  .header__training {
+    left: 8%;
+    top: 21%;
+  }
+  .header__offendiens {
+    left: 8%;
+    top: 37%;
+  }
+  .header__breeders {
+    left: 7%;
+    top: 54%;
+  }
+  .header__guard {
+    left: 7%;
+    top: 74%;
+  }
+  .header__reference {
+    display: none;
+  }
+  .header__menu {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__logo {
+    margin-left: 3px;
+  }
+  .header__logo img {
+    width: 129px;
+  }
+  .header__menu {
+    font-size: 9px;
+  }
+  .header__menu ul li {
+    margin-left: 13px;
+  }
 }
 
 .content {
   width: 100%;
+  display: none;
 }
 
 .Reliable-dog {
   height: 1019px;
   width: 100%;
   margin-top: -19px;
-  background: url("../img/main/backGreenFon.png") no-repeat, url("../img/main/greenFon.png") right no-repeat;
+  background: url("../img/main/backGreenFon.png") no-repeat;
+  background-size: 100% 100%;
   background-blend-mode: multiply;
   position: relative;
 }
@@ -246,6 +460,7 @@ body {
 }
 
 .mainPageBreeds {
+  display: none;
   height: 924px;
   margin-bottom: 89px;
   position: relative;
@@ -400,7 +615,105 @@ body {
   z-index: 2;
 }
 
+@media (max-width: 1440px) {
+  .Reliable-dog {
+    height: 900px;
+  }
+  .Reliable-dog__logo-big {
+    width: 30%;
+    top: 14%;
+  }
+  .Reliable-dog__description {
+    font-size: 16px;
+  }
+  .Reliable-dog__social p {
+    font-size: 45px;
+  }
+  .Reliable-dog__social i {
+    font-size: 53px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .Reliable-dog {
+    height: 700px;
+  }
+  .Reliable-dog__logo-big {
+    top: 18%;
+  }
+  .Reliable-dog__description {
+    font-size: 13px;
+    width: 500px;
+    padding-top: 2%;
+  }
+  .Reliable-dog__description span {
+    font-size: 45px;
+  }
+  .Reliable-dog__social {
+    margin-top: 13%;
+  }
+  .Reliable-dog__social p {
+    font-size: 35px;
+  }
+  .Reliable-dog__social i {
+    font-size: 31px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Reliable-dog {
+    height: 500px;
+  }
+  .Reliable-dog__description {
+    font-size: 12px;
+    width: 380px;
+  }
+  .Reliable-dog__description span {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 425px) {
+  .Reliable-dog {
+    height: 300px;
+  }
+  .Reliable-dog__description {
+    font-size: 7px;
+    width: 49%;
+  }
+  .Reliable-dog__description span {
+    font-size: 14px;
+  }
+  .Reliable-dog__social {
+    margin-top: -18%;
+  }
+  .Reliable-dog__social p {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+  .Reliable-dog__social i {
+    font-size: 14px;
+    margin-right: 23px;
+  }
+  .Reliable-dog__social ul {
+    margin-top: 6px;
+  }
+}
+
+@media (max-width: 375px) {
+  .Reliable-dog {
+    height: 250px;
+  }
+}
+
+@media (max-width: 320px) {
+  .Reliable-dog {
+    height: 200px;
+  }
+}
+
 .footer {
+  display: none;
   background: radial-gradient(65.16% 565.02% at 81.43% 50%, #E0E0E0 0%, #FFFDFA 50.61%, #E0E0E0 100%);
   position: relative;
   height: 750px;
