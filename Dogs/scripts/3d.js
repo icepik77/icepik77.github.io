@@ -10,7 +10,7 @@
 
     const renderer = new THREE.WebGLRenderer({alpha: true, antialias:true});
     renderer.setClearColor(0x000000,0);
-    renderer.setSize(1200, 820);
+    renderer.setSize(1887, 820);
 
 
     renderer.domElement.setAttribute("id", "dog-model");
