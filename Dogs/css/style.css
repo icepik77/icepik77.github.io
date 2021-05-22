@@ -13,6 +13,7 @@ body {
 }
 
 .header {
+  display: block;
   height: 922px;
   position: relative;
   background-color: #E5E5E5;
@@ -36,6 +37,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 2;
   font-family: 'Merriweather', serif;
   font-size: 14px;
   color: black;
@@ -173,7 +175,10 @@ body {
 }
 
 .header__reference {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
   position: absolute;
   left: 120px;
   top: 753px;
@@ -210,12 +215,55 @@ body {
     display: inline-block;
     position: absolute;
     width: 60%;
-    left: 36%;
-    top: 13%;
+    left: 30%;
+    top: -5%;
   }
   .header__fon img {
     width: 100%;
     height: 100%;
+  }
+}
+
+@media (max-width: 1750px) {
+  .header__fon {
+    width: 60%;
+    left: 30%;
+    top: 2%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .header__fon {
+    width: 60%;
+    left: 30%;
+    top: 9%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .header__fon {
+    width: 60%;
+    left: 37%;
+    top: 16%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header__training {
+    left: 200px;
+    top: 131px;
+  }
+  .header__offendiens {
+    left: 100px;
+    top: 328px;
+  }
+  .header__breeders {
+    left: 200px;
+    top: 529px;
+  }
+  .header__fon {
+    left: 37%;
+    top: 23%;
   }
 }
 
@@ -250,7 +298,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    top: 93%;
+    top: 90%;
     font-size: 10px;
   }
   .header__reference img {
@@ -270,7 +318,7 @@ body {
     font-size: 11px;
   }
   .header__reference {
-    top: 92%;
+    display: none;
   }
 }
 
@@ -387,14 +435,18 @@ body {
   .header__menu ul li {
     margin-left: 13px;
   }
+  body {
+    width: 102%;
+  }
 }
 
 .content {
   width: 100%;
-  display: none;
+  display: block;
 }
 
 .Reliable-dog {
+  display: block;
   height: 1019px;
   width: 100%;
   margin-top: -19px;
@@ -460,14 +512,21 @@ body {
 }
 
 .mainPageBreeds {
-  display: none;
+  display: block;
+  width: 100%;
+  padding-left: 4%;
   height: 924px;
   margin-bottom: 89px;
   position: relative;
 }
 
+.mainPageBreeds img {
+  width: 100%;
+  height: 100%;
+}
+
 .mainPageBreeds__description {
-  width: 726px;
+  width: 40%;
   height: 285px;
   font-family: 'Merriweather', serif;
   font-size: 18px;
@@ -514,24 +573,20 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 200px;
+  padding-left: 3%;
 }
 
 .mainPageBreeds__firstDog {
-  width: 726px;
-  height: 307px;
-  margin-right: 10px;
+  width: 30%;
+  height: 320px;
+  margin-right: 16px;
+  padding-top: 13px;
   position: relative;
   float: right;
 }
 
-.mainPageBreeds__firstDog img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
 .mainPageBreeds__firstDog span {
-  font-size: 38px;
+  font-size: 2.2em;
   font-family: 'Oswald', sans-serif;
   line-height: 2;
 }
@@ -545,26 +600,24 @@ body {
   font-family: 'Merriweather', serif;
   position: absolute;
   top: 40%;
-  left: 16%;
+  left: 3%;
   z-index: 2;
 }
 
+.mainPageBreeds__firstDog p :first-child {
+  text-decoration: none;
+}
+
 .mainPageBreeds__secondDog {
-  width: 726px;
-  height: 307px;
-  margin-right: 10px;
+  width: 30%;
+  height: 320px;
+  margin-right: 17px;
   position: relative;
   float: right;
 }
 
-.mainPageBreeds__secondDog img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
 .mainPageBreeds__secondDog span {
-  font-size: 38px;
+  font-size: 2.2em;
   font-family: 'Oswald', sans-serif;
   line-height: 2;
 }
@@ -578,26 +631,24 @@ body {
   font-family: 'Merriweather', serif;
   position: absolute;
   top: 40%;
-  left: 16%;
+  left: 3%;
   z-index: 2;
 }
 
+.mainPageBreeds__secondDog p :first-child {
+  text-decoration: none;
+}
+
 .mainPageBreeds__thirdDog {
-  width: 726px;
-  height: 307px;
+  width: 30%;
+  height: 320px;
   margin-right: 10px;
   position: relative;
   float: right;
 }
 
-.mainPageBreeds__thirdDog img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
 .mainPageBreeds__thirdDog span {
-  font-size: 38px;
+  font-size: 2.2em;
   font-family: 'Oswald', sans-serif;
   line-height: 2;
 }
@@ -611,8 +662,12 @@ body {
   font-family: 'Merriweather', serif;
   position: absolute;
   top: 40%;
-  left: 16%;
+  left: 3%;
   z-index: 2;
+}
+
+.mainPageBreeds__thirdDog p :first-child {
+  text-decoration: none;
 }
 
 @media (max-width: 1440px) {
@@ -625,12 +680,47 @@ body {
   }
   .Reliable-dog__description {
     font-size: 16px;
+    width: 45%;
   }
   .Reliable-dog__social p {
     font-size: 45px;
   }
   .Reliable-dog__social i {
     font-size: 53px;
+  }
+  .mainPageBreeds__description {
+    width: 45%;
+  }
+  .mainPageBreeds__description span {
+    font-size: 41px;
+  }
+  .mainPageBreeds__firstDog p {
+    width: 200px;
+  }
+  .mainPageBreeds__firstDog span {
+    font-size: 30px;
+  }
+  .mainPageBreeds__firstDog a {
+    line-height: 1.5;
+  }
+  .mainPageBreeds__secondDog p {
+    width: 200px;
+  }
+  .mainPageBreeds__secondDog a {
+    line-height: 1.5;
+  }
+  .mainPageBreeds__secondDog span {
+    font-size: 30px;
+    line-height: 1.1;
+  }
+  .mainPageBreeds__thirdDog p {
+    width: 200px;
+  }
+  .mainPageBreeds__thirdDog span {
+    font-size: 30px;
+  }
+  .mainPageBreeds__thirdDog a {
+    line-height: 1.5;
   }
 }
 
@@ -643,52 +733,105 @@ body {
   }
   .Reliable-dog__description {
     font-size: 13px;
-    width: 500px;
     padding-top: 2%;
   }
   .Reliable-dog__description span {
-    font-size: 45px;
+    font-size: 37px;
   }
   .Reliable-dog__social {
-    margin-top: 13%;
+    margin-top: 10%;
   }
   .Reliable-dog__social p {
-    font-size: 35px;
+    font-size: 37px;
   }
   .Reliable-dog__social i {
     font-size: 31px;
   }
+  .mainPageBreeds__description {
+    font-size: 15px;
+  }
+  .mainPageBreeds__description span {
+    font-size: 30px;
+  }
+  .mainPageBreeds__firstDog {
+    height: 260px;
+  }
+  .mainPageBreeds__firstDog p {
+    top: 54%;
+    width: 135px;
+  }
+  .mainPageBreeds__firstDog span {
+    font-size: 20px;
+  }
+  .mainPageBreeds__firstDog a {
+    font-size: 12px;
+  }
+  .mainPageBreeds__secondDog {
+    height: 260px;
+  }
+  .mainPageBreeds__secondDog p {
+    top: 54%;
+    width: 135px;
+  }
+  .mainPageBreeds__secondDog span {
+    font-size: 20px;
+  }
+  .mainPageBreeds__secondDog a {
+    font-size: 12px;
+  }
+  .mainPageBreeds__thirdDog {
+    height: 260px;
+  }
+  .mainPageBreeds__thirdDog p {
+    top: 54%;
+    width: 135px;
+  }
+  .mainPageBreeds__thirdDog span {
+    font-size: 20px;
+  }
+  .mainPageBreeds__thirdDog a {
+    font-size: 12px;
+  }
+  .mainPageBreeds__reference {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainPageBreeds__reference img {
+    width: 40px;
+    height: 40px;
+  }
+  .mainPageBreeds__reference a {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 768px) {
+  /*.Reliable-dog{
+        height: 500px;
+        &__description{
+            font-size: 12px;
+            width: 380px;
+            & span{
+                font-size: 35px;
+            }
+        }
+    }*/
   .Reliable-dog {
-    height: 500px;
+    height: 370px;
   }
   .Reliable-dog__description {
     font-size: 12px;
-    width: 380px;
+    width: 96%;
   }
   .Reliable-dog__description span {
-    font-size: 35px;
-  }
-}
-
-@media (max-width: 425px) {
-  .Reliable-dog {
-    height: 300px;
-  }
-  .Reliable-dog__description {
-    font-size: 7px;
-    width: 49%;
-  }
-  .Reliable-dog__description span {
-    font-size: 14px;
+    font-size: 16px;
   }
   .Reliable-dog__social {
-    margin-top: -18%;
+    margin-top: -7%;
   }
   .Reliable-dog__social p {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 0px;
   }
   .Reliable-dog__social i {
@@ -698,39 +841,187 @@ body {
   .Reliable-dog__social ul {
     margin-top: 6px;
   }
+  .Reliable-dog__logo-big {
+    top: 69%;
+    left: 87%;
+    width: 10%;
+  }
+  .mainPageBreeds {
+    height: 500px;
+  }
+  .mainPageBreeds__firstDog, .mainPageBreeds .mainPageBreeds__secondDog, .mainPageBreeds .mainPageBreeds__thirdDog {
+    height: 113px;
+  }
+  .mainPageBreeds__firstDog span, .mainPageBreeds .mainPageBreeds__secondDog span, .mainPageBreeds .mainPageBreeds__thirdDog span {
+    font-size: 17px;
+  }
+  .mainPageBreeds__firstDog p :first-child, .mainPageBreeds .mainPageBreeds__secondDog p :first-child, .mainPageBreeds .mainPageBreeds__thirdDog p :first-child {
+    text-decoration: underline;
+  }
+  .mainPageBreeds__firstDog p :nth-child(2), .mainPageBreeds .mainPageBreeds__secondDog p :nth-child(2), .mainPageBreeds .mainPageBreeds__thirdDog p :nth-child(2) {
+    display: none;
+  }
+  .mainPageBreeds__secondDog {
+    margin-right: 7px;
+  }
+  .mainPageBreeds__secondDog p {
+    top: 49%;
+    width: 115px;
+  }
+  .mainPageBreeds__firstDog {
+    margin-right: 7px;
+  }
+  .mainPageBreeds__firstDog p {
+    top: 44%;
+  }
+  .mainPageBreeds__thirdDog p {
+    top: 44%;
+  }
+  .mainPageBreeds__reference {
+    display: none;
+  }
+  .mainPageBreeds__description {
+    width: 85%;
+  }
+  .mainPageBreeds__dogsRow {
+    margin-top: 125px;
+  }
+}
+
+@media (max-width: 425px) {
+  .Reliable-dog {
+    height: 353px;
+  }
+  .Reliable-dog__description {
+    font-size: 12px;
+    width: 96%;
+  }
+  .Reliable-dog__description span {
+    font-size: 16px;
+  }
+  .Reliable-dog__social {
+    margin-top: -2%;
+  }
+  .Reliable-dog__social p {
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+  .Reliable-dog__social i {
+    font-size: 14px;
+    margin-right: 23px;
+  }
+  .Reliable-dog__social ul {
+    margin-top: 6px;
+  }
+  .Reliable-dog__logo-big {
+    top: 83%;
+    left: 87%;
+    width: 10%;
+  }
+  .mainPageBreeds__description span {
+    font-size: 27px;
+  }
+  .mainPageBreeds__dogsRow {
+    margin-top: 150px;
+  }
+  .mainPageBreeds__firstDog span, .mainPageBreeds .mainPageBreeds__secondDog span, .mainPageBreeds .mainPageBreeds__thirdDog span {
+    font-size: 15px;
+  }
+  .mainPageBreeds__firstDog p :first-child, .mainPageBreeds .mainPageBreeds__secondDog p :first-child, .mainPageBreeds .mainPageBreeds__thirdDog p :first-child {
+    text-decoration: underline;
+  }
+  .mainPageBreeds__firstDog p :nth-child(2), .mainPageBreeds .mainPageBreeds__secondDog p :nth-child(2), .mainPageBreeds .mainPageBreeds__thirdDog p :nth-child(2) {
+    display: none;
+  }
+  .mainPageBreeds__secondDog p {
+    width: 103px;
+  }
 }
 
 @media (max-width: 375px) {
   .Reliable-dog {
-    height: 250px;
+    height: 390px;
+  }
+  .Reliable-dog__description {
+    text-align: center;
+  }
+  .Reliable-dog__logo-big {
+    top: 79%;
+    left: 87%;
+    width: 10%;
+  }
+  .Reliable-dog__social {
+    margin-left: 31%;
+    margin-top: 14%;
+  }
+  .mainPageBreeds__description {
+    font-size: 12px;
+  }
+  .mainPageBreeds__description span {
+    font-size: 23px;
+  }
+  .mainPageBreeds__dogsRow {
+    margin-top: 70px;
+  }
+  .mainPageBreeds__firstDog, .mainPageBreeds .mainPageBreeds__secondDog, .mainPageBreeds .mainPageBreeds__thirdDog {
+    height: 100px;
+  }
+  .mainPageBreeds__firstDog span, .mainPageBreeds .mainPageBreeds__secondDog span, .mainPageBreeds .mainPageBreeds__thirdDog span {
+    font-size: 13px;
+  }
+  .mainPageBreeds__firstDog, .mainPageBreeds .mainPageBreeds__thirdDog {
+    top: 37%;
+  }
+  .mainPageBreeds__secondDog p {
+    width: 87px;
+    top: 41%;
+  }
+  .mainPageBreeds__secondDog {
+    padding-top: 7px;
+  }
+  .mainPageBreeds__thirdDog {
+    padding-top: 7px;
   }
 }
 
 @media (max-width: 320px) {
   .Reliable-dog {
-    height: 200px;
+    height: 400px;
+  }
+  .Reliable-dog__logo-big {
+    top: 87%;
+    left: 87%;
+    width: 10%;
+  }
+  .Reliable-dog__social {
+    margin-left: 30%;
+    margin-top: 20%;
   }
 }
 
 .footer {
-  display: none;
+  display: block;
   background: radial-gradient(65.16% 565.02% at 81.43% 50%, #E0E0E0 0%, #FFFDFA 50.61%, #E0E0E0 100%);
   position: relative;
   height: 750px;
 }
 
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 7%;
+  padding-left: 7%;
+}
+
 .footer__logo {
   width: 294px;
   height: 118px;
-  position: absolute;
-  left: 5.5%;
-  top: 15%;
 }
 
 .footer__social {
-  position: absolute;
-  left: 6.5%;
-  top: 34%;
+  padding-left: 17px;
+  margin-top: 40px;
 }
 
 .footer__social p {
@@ -744,11 +1035,10 @@ body {
 }
 
 .footer__phone {
-  position: absolute;
+  padding-left: 8%;
+  margin-top: 35px;
   font-size: 18px;
   font-family: 'Merriweather', serif;
-  left: 6.3%;
-  top: 55%;
 }
 
 .footer__phone span {
@@ -758,9 +1048,7 @@ body {
 }
 
 .footer__about-dog {
-  position: absolute;
-  left: 27%;
-  top: 15%;
+  margin-left: 8%;
 }
 
 .footer__about-dog span {
@@ -786,9 +1074,7 @@ body {
 }
 
 .footer__programms {
-  position: absolute;
-  left: 48%;
-  top: 15%;
+  margin-left: 8%;
 }
 
 .footer__programms span {
@@ -811,4 +1097,97 @@ body {
 .footer__programms ul li a {
   color: black;
   text-decoration: none;
+}
+
+@media (max-width: 1440px) {
+  .footer__row {
+    padding-left: 0;
+  }
+  .footer__phone {
+    padding-left: 14px;
+  }
+  .footer__social {
+    padding-left: 21px;
+  }
+  .footer__about-dog span, .footer .footer__programms span {
+    font-size: 26px;
+  }
+  .footer__programms {
+    margin-left: 7%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer__phone {
+    margin-top: 0;
+  }
+  .footer__about-dog {
+    padding-top: 46px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    height: 560px;
+  }
+  .footer__about-dog {
+    display: none;
+  }
+  .footer__programms {
+    display: none;
+  }
+  .footer__phone {
+    margin-top: 56px;
+  }
+  .footer__logo-and-social {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__social {
+    margin-top: 0;
+  }
+  .footer__phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__phone p {
+    width: 283px;
+  }
+}
+
+@media (max-width: 425px) {
+  .footer {
+    height: 410px;
+  }
+  .footer__logo {
+    width: 254px;
+  }
+  .footer__logo img {
+    width: 100%;
+  }
+  .footer__social {
+    padding-right: 22px;
+  }
+  .footer__phone {
+    font-size: 12px;
+    margin-top: 29px;
+    padding-left: 0px;
+    text-align: center;
+  }
+  .footer__phone p {
+    width: 188px;
+  }
+  .footer__phone span {
+    font-size: 28px;
+  }
 }
