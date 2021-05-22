@@ -1,5 +1,6 @@
 body {
   scroll-behavior: smooth;
+  margin: 0;
 }
 
 * {
@@ -434,9 +435,6 @@ body {
   }
   .header__menu ul li {
     margin-left: 13px;
-  }
-  body {
-    width: 102%;
   }
 }
 
@@ -935,6 +933,10 @@ body {
   }
   .mainPageBreeds__secondDog p {
     width: 103px;
+  }
+  .mainPageBreeds__thirdDog p {
+    top: 54%;
+    width: 87px;
   }
 }
 

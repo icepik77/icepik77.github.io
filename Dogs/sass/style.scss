@@ -2,6 +2,7 @@
 //font-family: 'Oswald', sans-serif;
 body{
     scroll-behavior: smooth;
+    margin: 0;
 }
 *{
     box-sizing: border-box;
@@ -399,9 +400,6 @@ body{
                 margin-left: 13px;
             }
         }
-    }
-    body{
-        width: 102%;
     }
 }
 .content{
@@ -884,6 +882,10 @@ body{
                width: 103px;
            }
         }
+    }
+    .mainPageBreeds__thirdDog p {
+        top: 54%;
+        width: 87px;
     }
 }
 @media(max-width:375px){
