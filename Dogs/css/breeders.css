@@ -16,12 +16,19 @@ body {
   height: 922px;
   position: relative;
   background-color: #E5E5E5;
+  height: 922px;
+  position: relative;
+  background-color: #E5E5E5;
+  height: 922px;
+  position: relative;
+  background-color: #E5E5E5;
 }
 
 .header__high-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 10px;
 }
 
 .header__logo {
@@ -105,9 +112,7 @@ body {
 }
 
 .header__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   padding-top: 4%;
   margin-top: 2%;
 }
@@ -156,6 +161,7 @@ body {
 }
 
 .list-breeders {
+  display: none;
   position: relative;
 }
 
@@ -373,6 +379,7 @@ body {
 }
 
 .footer {
+  display: none;
   background: radial-gradient(65.16% 565.02% at 81.43% 50%, #E0E0E0 0%, #FFFDFA 50.61%, #E0E0E0 100%);
   position: relative;
   height: 750px;
