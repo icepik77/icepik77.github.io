@@ -1,3 +1,8 @@
+import * as THREE from "https://cdn.skypack.dev/three@0.136.0";
+import { OrbitControls } from "https://cdn.skypack.dev/three@0.136.0/examples/jsm/controls/OrbitControls";
+import { GLTFLoader } from "https://cdn.skypack.dev/three@0.136.0/examples/jsm/loaders/GLTFLoader";
+import { FontLoader } from "https://cdn.skypack.dev/three@0.136.0/examples/jsm/loaders/FontLoader";
+import { TextGeometry } from "https://cdn.skypack.dev/three@0.136.0/examples/jsm/geometries/TextGeometry";
 
 //создание сцены 
 
@@ -39,7 +44,7 @@
     //const helper = new THREE.PointLightHelper(pLight1);
     //scene.add(helper);
 
-    var loader = new THREE.GLTFLoader();
+    var loader = new GLTFLoader();
     var obj = null;
 
     loader.load('dog/dog.gltf', function(gltf){
