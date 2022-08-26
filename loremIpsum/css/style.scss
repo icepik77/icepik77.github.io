@@ -599,6 +599,7 @@ body{
     background-color: #fafafa;
     max-width: 1600px;
     margin: 0 auto;
+    margin-bottom: 25px;
     &__text{
         color: #061e37;
         text-align: center;
@@ -688,6 +689,10 @@ body{
         }
         & nav{
             margin-left: 15%;
+        }
+        &__preview{
+            width: 460px;
+            height: 260px;
         }
     }
     .video-container{
@@ -784,6 +789,10 @@ body{
         &__sign{
             margin-left: 3%;
         }
+        &__preview {
+            width: 356px;
+            height: 197px;
+        }
     }
     nav{
         margin-left: 10%;
@@ -844,6 +853,12 @@ body{
     }
 }
 @media(max-width:768px){
+    .video-container {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
     .header{
         &__sign{
             display: none;

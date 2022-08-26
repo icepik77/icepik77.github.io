@@ -637,6 +637,7 @@ body {
   background-color: #fafafa;
   max-width: 1600px;
   margin: 0 auto;
+  margin-bottom: 25px;
 }
 .contact__text {
   color: #061e37;
@@ -727,6 +728,10 @@ body {
   .header nav {
     margin-left: 15%;
   }
+  .header__preview {
+    width: 460px;
+    height: 260px;
+  }
   .video-container {
     width: 100%;
   }
@@ -815,6 +820,10 @@ body {
   .header__sign {
     margin-left: 3%;
   }
+  .header__preview {
+    width: 356px;
+    height: 197px;
+  }
   nav {
     margin-left: 10%;
   }
@@ -868,6 +877,12 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .video-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
   .header__sign {
     display: none;
   }

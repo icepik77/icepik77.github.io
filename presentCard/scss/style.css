@@ -1,0 +1,176 @@
+.wrapper {
+  width: 2135px;
+  height: 7829px;
+  margin: 0 auto;
+  background: url("../img/Fone.png") no-repeat;
+}
+
+.header__menu {
+  margin-left: 1253px;
+  width: 488px;
+}
+.header__menu ul {
+  display: flex;
+  list-style: none;
+}
+.header__menu ul li {
+  color: #FFE9BF;
+  font-family: "Lora", serif;
+  font-size: 14px;
+  margin-right: 50px;
+}
+.header__high-row {
+  display: flex;
+  padding-top: 10px;
+}
+.header__high-row img {
+  flex-direction: column;
+  width: 35px;
+  height: 32px;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+.header__title {
+  width: 838px;
+  color: #FFE9BF;
+  font-family: "Lora", serif;
+  font-size: 48px;
+  margin-left: 544px;
+  margin-top: 130px;
+  text-align: center;
+}
+.header__subtitle {
+  width: 740px;
+  color: #FFE9BF;
+  font-family: "Merriweathe", normal;
+  font-size: 16px;
+  line-height: 22px;
+  margin-left: 580px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.content__travel-title {
+  display: flex;
+  color: #FFE9BF;
+  font-family: "Lora", serif;
+  font-size: 48px;
+  margin-left: 570px;
+  margin-top: 751px;
+  text-align: center;
+}
+.content__travel-title span {
+  color: #032E54;
+  font-size: 36px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.content__2travel-title {
+  display: flex;
+  flex-direction: column;
+  width: 1024px;
+  color: #FFE9BF;
+  font-family: "Merriweather", normal;
+  font-size: 16px;
+  line-height: 21px;
+  margin-left: 480px;
+  margin-top: 15px;
+  text-align: center;
+}
+.content__2travel-title img {
+  width: 100%;
+  margin-top: 100px;
+}
+.content__2travel-title p {
+  width: 826px;
+  margin: 0 auto;
+}
+.content__tabl {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin-left: 400px;
+  margin-top: 300px;
+}
+.content__1text {
+  display: flex;
+  flex-direction: column;
+  width: 750px;
+  margin-left: 270px;
+  margin-top: 300px;
+}
+.content__2stolb {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  color: #FFE9BF;
+  font-family: "Lora", normal;
+  font-size: 31px;
+  line-height: 40px;
+  margin-left: 200px;
+  margin-top: 380px;
+  text-align: center;
+}
+.content__2stolb span {
+  font-size: 24px;
+  line-height: 28px;
+  margin-left: 0px;
+  padding-top: 30px;
+}
+.content__row {
+  display: flex;
+}
+.content__finich {
+  display: flex;
+  margin-left: 0px;
+  margin-top: 380px;
+}
+
+.footer {
+  padding-left: 6%;
+}
+.footer__phone {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  display: flex;
+  color: #FFF7ED;
+}
+.footer__phone img {
+  margin-right: 10px;
+  margin-top: 12px;
+  width: 48px;
+  height: 48px;
+}
+.footer__contact {
+  font-family: Lora;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 61px;
+  color: #FFE9BF;
+}
+.footer__mail {
+  display: flex;
+}
+.footer__mail a {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFF7ED;
+}
+.footer__mail img {
+  margin-right: 27px;
+  margin-top: 23px;
+  width: 33px;
+  height: 19px;
+}
+.footer__social {
+  padding-top: 2%;
+  margin-left: -2%;
+}/*# sourceMappingURL=style.css.map */

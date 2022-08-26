@@ -419,7 +419,7 @@ body{
 .footer{
     display: block;
     background: url("../img/footerFon.png");
-    height: 852px;
+    height: 700px;
     padding-left: 6%;
     padding-top: 15%;
     &__phone{
@@ -570,6 +570,9 @@ body{
             height: auto;
             margin-top: 16%;
         }
+    }
+    .footer{
+        height: 600px;
     }
 }
 @media(max-width:1300px){
@@ -842,6 +845,7 @@ body{
     }
     .footer{
         background: #2c2e39;
+        height: 450px;
         &__contact{
             font-size: 47px;
         }
