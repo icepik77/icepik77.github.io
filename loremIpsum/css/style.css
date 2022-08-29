@@ -68,61 +68,6 @@ ul li a:hover {
   margin-top: 125px;
 }
 
-.string div {
-  display: inline-block;
-}
-
-#colorstring {
-  margin-top: 100px;
-}
-
-#Lorem {
-  line-height: 1.7;
-  margin-top: 90px;
-}
-
-#TitleLorem {
-  font-size: 40px;
-  font-weight: 900;
-}
-
-#titleProject1 {
-  font-size: 45px;
-  line-height: 0.8;
-  font-weight: 600;
-  color: #061e37;
-}
-
-#usefullfirstpict {
-  padding-left: 40%;
-}
-
-#ikons {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-#servicestitle {
-  font-size: 45px;
-  font-weight: 600;
-  color: #061e37;
-}
-
-#titletext {
-  text-align: center;
-  color: grey;
-}
-
-#Statisticshidetext {
-  display: none;
-}
-
-#Statisticimgaroundtext, #INBOXimgaroundtext, #TEAMimgaroundtext {
-  display: none;
-  float: left;
-  margin-left: 25px;
-}
-
 .statdivright {
   margin-left: 670px;
   position: absolute;
@@ -130,13 +75,9 @@ ul li a:hover {
 }
 
 .inboxdivright {
-  margin-left: 670px;
   position: absolute;
+  right: 2%;
   margin-top: 10px;
-}
-
-#INBOXhidetext, #INBOXimgaroundtext, #TEAMhidetext, #TEAMimgaroundtext {
-  display: none;
 }
 
 .title {
@@ -265,9 +206,15 @@ body {
   display: inline-block;
   box-sizing: border-box;
   font-family: Raleway;
+  line-height: 1.7;
+  margin-top: 90px;
 }
 .header__title p {
   font-size: 19px;
+}
+.header__title-lorem {
+  font-size: 40px;
+  font-weight: 900;
 }
 .header__RightPartVidTitle {
   float: right;
@@ -282,10 +229,28 @@ body {
   max-width: 1600px;
   margin: 0 auto;
 }
+.useful__title-first {
+  font-size: 45px;
+  line-height: 0.8;
+  font-weight: 600;
+  color: #061e37;
+}
 .useful__EasyandUseful {
   text-align: center;
   color: grey;
   line-height: 1.5;
+}
+.useful__ikons-string {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+}
+.useful__firstusefull img, .useful .useful__secondtusefull img, .useful .useful__thirdtusefull img {
+  padding-left: 40%;
+}
+.useful__colorstring {
+  margin-top: 100px;
+  display: flex;
 }
 .useful__firstcolor {
   background-color: #80d8ff;
@@ -407,6 +372,23 @@ body {
   padding-top: 9px;
   padding-right: 10px;
 }
+.services__title {
+  font-size: 45px;
+  font-weight: 600;
+  color: #061e37;
+}
+.services__title-text {
+  text-align: center;
+  color: grey;
+}
+.services__stat-img, .services .services__inbox-img, .services .services__team-img {
+  display: none;
+  float: left;
+  margin-left: -79px;
+}
+.services__stat-text, .services .services__team-text, .services .services__inbox-text {
+  display: none;
+}
 .services__stasistics {
   box-shadow: 1px 1px 10px grey;
   border-radius: 5px;
@@ -415,16 +397,18 @@ body {
   height: 45px;
   margin-top: 20px;
 }
+.services__stat-text {
+  display: none;
+}
 .services__inboxdivright {
-  margin-left: 670px;
   position: absolute;
+  right: 2%;
   margin-top: 10px;
 }
 .services__statdivright {
-  margin-left: 670px;
-  padding-top: 9px;
-  padding-right: 10px;
   position: absolute;
+  padding-top: 9px;
+  right: 2%;
 }
 
 .customers {
@@ -447,6 +431,7 @@ body {
   width: 60%;
   position: relative;
   padding-left: 8%;
+  padding-top: 2%;
 }
 .customers__title {
   display: block;
@@ -455,12 +440,14 @@ body {
   font-family: Raleway;
   color: white;
   line-height: 1.2;
-  text-align: center;
+  text-align: left;
+  margin-left: 12%;
 }
 .customers__white-text {
   color: white;
   margin-top: 35px;
-  text-align: center;
+  text-align: left;
+  margin-left: 12%;
   line-height: 2;
   display: block;
 }
@@ -763,8 +750,14 @@ body {
   .customers__column-1 {
     width: 100%;
   }
+  .customers__title {
+    margin-left: 0;
+    text-align: center;
+  }
   .customers__white-text {
     font-size: 25px;
+    margin-left: 0;
+    text-align: center;
   }
   .customers__button {
     margin: 0 auto;
@@ -824,15 +817,15 @@ body {
     width: 356px;
     height: 197px;
   }
-  nav {
-    margin-left: 10%;
-  }
-  #TitleLorem {
-    line-height: 46px;
-  }
-  #Lorem {
+  .header__title {
     line-height: 1.7;
     width: 85%;
+  }
+  .header__title-lorem {
+    line-height: 46px;
+  }
+  nav {
+    margin-left: 10%;
   }
   .useful__firstcolor, .useful .useful__secondstcolor, .useful .useful__fourthstcolor {
     position: relative;
@@ -861,10 +854,6 @@ body {
   .services__statdivright, .services .services__inboxdivright, .services .inboxdivright {
     margin-left: 80%;
   }
-  .hide-text {
-    display: flex;
-    flex-wrap: wrap;
-  }
   .customers__row {
     display: flex;
     align-items: center;
@@ -883,8 +872,24 @@ body {
     justify-content: center;
     margin-bottom: 30px;
   }
+  .header {
+    height: auto;
+  }
   .header__sign {
     display: none;
+  }
+  .header__vid-and-title {
+    display: flex;
+    flex-direction: column;
+  }
+  .header__LeftPartVidAndTitle {
+    width: 100%;
+  }
+  .header__RightPartVidTitle {
+    width: 100%;
+  }
+  .header__button-string {
+    display: flex;
   }
   .header nav {
     display: none;
@@ -923,8 +928,21 @@ body {
     padding-left: 2px;
     width: 100%;
   }
+  .useful {
+    margin-top: 40px;
+  }
   .useful .string {
     flex-direction: column;
+  }
+  .useful__title-string {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .useful__firstusefull, .useful .useful__secondtusefull, .useful .useful__thirdtusefull {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .useful__secondtusefull {
     margin-left: 0;
@@ -966,6 +984,9 @@ body {
   }
   .useful__thirdstcolor img {
     margin-left: 18px;
+  }
+  .useful__firstusefull img, .useful .useful__secondtusefull img, .useful .useful__thirdtusefull img {
+    padding-left: 0;
   }
   .services__statdivright, .services .services__inboxdivright, .services .inboxdivright {
     margin-left: 0;
@@ -1111,18 +1132,9 @@ body {
   }
 }
 @media (max-width: 425px) {
-  .header {
-    height: auto;
-  }
-  .header__vid-and-title {
+  .header__button-string {
     display: flex;
-    flex-direction: column;
-  }
-  .header__LeftPartVidAndTitle {
-    width: 100%;
-  }
-  .header__RightPartVidTitle {
-    width: 100%;
+    justify-content: space-around;
   }
   #ButTry {
     padding-left: 3%;
@@ -1180,5 +1192,10 @@ body {
   .send {
     padding: 10px 26px;
     margin-left: 3.5%;
+  }
+  .ButtonBuyNow, .TryForFree, .GetStartedCustomers {
+    width: 130px;
+    height: 40px;
+    padding-top: 13px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -46,16 +46,16 @@ jQuery(function () {
 				height: "300",
 				duration: "4000"
 			});
-			$('#Statisticshidetext').fadeIn(300);
-			$('#Statisticimgaroundtext').fadeIn(300);
+			$('.services__stat-text').fadeIn(300);
+			$('.services__stat-img').fadeIn(300);
 		} else { // если есть
 			$(this).removeClass('clicked'); // убираем класс
 			$(this).animate({
 				height: "45",
 				duration: "7000"
 			});
-			$('#Statisticshidetext').fadeOut(300);
-			$('#Statisticimgaroundtext').fadeOut(300);
+			$('.services__stat-text').fadeOut(300);
+			$('.services__stat-img').fadeOut(300);
 
 		}
 	});
@@ -66,16 +66,16 @@ jQuery(function () {
 				height: "300",
 				duration: "4000"
 			});
-			$('#INBOXhidetext').fadeIn(300);
-			$('#INBOXimgaroundtext').fadeIn(300);
+			$('.services__inbox-text').fadeIn(300);
+			$('.services__inbox-img').fadeIn(300);
 		} else { // если есть
 			$(this).removeClass('clicked'); // убираем класс
 			$(this).animate({
 				height: "45",
 				duration: "7000"
 			});
-			$('#INBOXhidetext').fadeOut(300);
-			$('#INBOXimgaroundtext').fadeOut(300);
+			$('.services__inbox-text').fadeOut(300);
+			$('.services__inbox-img').fadeOut(300);
 
 		}
 	});
@@ -86,16 +86,16 @@ jQuery(function () {
 				height: "300",
 				duration: "4000"
 			});
-			$('#TEAMhidetext').fadeIn(300);
-			$('#TEAMimgaroundtext').fadeIn(300);
+			$('.services__team-text').fadeIn(300);
+			$('.services__team-img').fadeIn(300);
 		} else { // если есть
 			$(this).removeClass('clicked'); // убираем класс
 			$(this).animate({
 				height: "45",
 				duration: "7000"
 			});
-			$('#TEAMhidetext').fadeOut(300);
-			$('#TEAMimgaroundtext').fadeOut(300);
+			$('.services__team-text').fadeOut(300);
+			$('.services__team-img').fadeOut(300);
 		}
 	});
 

@@ -56,63 +56,17 @@ ul li a:hover {
 	box-sizing: border-box;
 	margin-top: 125px;
 }
-.string div {
-	display: inline-block;
-}
-#colorstring{
-	margin-top: 100px;
-}
-#Lorem{
-	line-height: 1.7;
-	margin-top:  90px;
-}
-#TitleLorem{
-	font-size: 40px;
-	font-weight: 900;
-}
-#titleProject1{
-	font-size: 45px;
-    line-height: 0.8;
-    font-weight: 600;
-    color: #061e37;
-}
-#usefullfirstpict{
-	padding-left: 40%;
-}
-#ikons{
-	max-width: 1440px;
-	margin:0 auto;
-}
-#servicestitle {
-    font-size: 45px;
-    font-weight: 600;
-    color: #061e37;
-}
-#titletext{
-	text-align: center;
-	color:grey;
-}
-#Statisticshidetext{
-	display:none;
-}
-#Statisticimgaroundtext,  #INBOXimgaroundtext, #TEAMimgaroundtext  {
-	display: none;
-	float: left;
-	margin-left: 25px;
-}
 .statdivright{
 	margin-left: 670px;
 	position: absolute;
 	margin-top: 10px;
 }
 .inboxdivright{
-	margin-left: 670px;
 	position: absolute;
+    right: 2%;
 	margin-top: 10px;
 }
-#INBOXhidetext, #INBOXimgaroundtext, #TEAMhidetext, #TEAMimgaroundtext {
-	display: none;
-}
+
 .title{
     font-size: 45px;
     font-family: Raleway;
@@ -229,9 +183,15 @@ body{
         display: inline-block;
         box-sizing: border-box;
         font-family: Raleway;
+        line-height: 1.7;
+	    margin-top:  90px;
         & p{
             font-size: 19px;
         }
+    }
+    &__title-lorem{
+        font-size: 40px;
+        font-weight: 900;
     }
     &__RightPartVidTitle{
         float:right;
@@ -246,10 +206,28 @@ body{
 .useful{
     max-width: 1600px;
 	margin: 0 auto;
+    &__title-first{
+        font-size: 45px;
+        line-height: 0.8;
+        font-weight: 600;
+        color: #061e37;
+    }
     &__EasyandUseful{
         text-align: center;
         color: grey;
         line-height: 1.5;
+    }
+    &__ikons-string{
+        max-width: 1440px;
+	    margin:0 auto;
+        display: flex;
+    }
+    &__firstusefull img, .useful__secondtusefull img, .useful__thirdtusefull img{
+        padding-left: 40%;
+    }
+    &__colorstring{
+        margin-top: 100px;
+        display: flex;
     }
     &__firstcolor{
         background-color: #80d8ff;
@@ -371,6 +349,23 @@ body{
         padding-top: 9px;
         padding-right: 10px;
     }
+    &__title{
+        font-size: 45px;
+        font-weight: 600;
+        color: #061e37;
+    }
+    &__title-text{
+        text-align: center;
+        color:grey;
+    }
+    &__stat-img, .services__inbox-img, .services__team-img{
+        display: none;
+        float: left;
+        margin-left: -79px;
+    }
+    &__stat-text, .services__team-text, .services__inbox-text{
+        display: none;
+    }
     &__stasistics{
         box-shadow: 1px 1px 10px grey;
         border-radius: 5px;
@@ -379,16 +374,18 @@ body{
         height: 45px;
         margin-top: 20px;
     }
+    &__stat-text{
+        display: none;
+    }
     &__inboxdivright{
-        margin-left: 670px;
         position: absolute;
+        right: 2%;
         margin-top: 10px;
     }
     &__statdivright{
-        margin-left: 670px;
-        padding-top: 9px;
-        padding-right: 10px;
         position: absolute;
+        padding-top: 9px;
+        right: 2%;
     }
 }
 .customers{
@@ -410,6 +407,7 @@ body{
         width: 60%;
         position: relative;
         padding-left: 8%;
+        padding-top: 2%;
     }
     &__title {
         display: block;
@@ -418,12 +416,14 @@ body{
         font-family: Raleway;
         color: white;
         line-height: 1.2;
-        text-align: center;
+        text-align: left;
+        margin-left: 12%;
     }
     &__white-text {
         color: white;
         margin-top: 35px;
-        text-align: center;
+        text-align: left;
+        margin-left: 12%;
         line-height: 2;
         display: block;
     }
@@ -727,8 +727,14 @@ body{
         &__column-1 {
             width: 100%;
         }
+        &__title{
+            margin-left: 0;
+            text-align: center;
+        }
         &__white-text {
             font-size: 25px;
+            margin-left: 0;
+            text-align: center;
         }
         &__button {
             margin: 0 auto;
@@ -793,16 +799,16 @@ body{
             width: 356px;
             height: 197px;
         }
+        &__title{
+            line-height: 1.7;
+            width: 85%;
+        }
+        &__title-lorem{
+            line-height: 46px;
+        }
     }
     nav{
         margin-left: 10%;
-    }
-    #TitleLorem {
-        line-height: 46px;
-    }
-    #Lorem {
-        line-height: 1.7;
-        width: 85%;
     }
     .useful{
         &__firstcolor, .useful__secondstcolor, .useful__fourthstcolor{
@@ -835,10 +841,6 @@ body{
             margin-left: 80%;
         }
     }
-    .hide-text{
-        display: flex;
-        flex-wrap: wrap;
-    }
     .customers{
         &__row {
             display: flex;
@@ -860,8 +862,22 @@ body{
         margin-bottom: 30px;
     }
     .header{
+        height: auto;
         &__sign{
             display: none;
+        }
+        &__vid-and-title{
+            display: flex;
+            flex-direction: column;
+        }
+        &__LeftPartVidAndTitle{
+            width: 100%;
+        }
+        &__RightPartVidTitle {
+            width: 100%;
+        }
+        &__button-string{
+            display: flex;
         }
         & nav{
             display: none;
@@ -902,8 +918,19 @@ body{
         width: 100%;
     }
     .useful{
+        margin-top: 40px;
         & .string{
             flex-direction: column;
+        }
+        &__title-string{
+            width: 95%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        &__firstusefull, .useful__secondtusefull, .useful__thirdtusefull{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         &__secondtusefull {
             margin-left: 0;
@@ -945,6 +972,9 @@ body{
             & img{
                 margin-left: 18px;
             }
+        }
+        &__firstusefull img, .useful__secondtusefull img, .useful__thirdtusefull img{
+            padding-left: 0;
         }
     }
     .services{
@@ -1104,16 +1134,9 @@ body{
 }
 @media(max-width:425px){
     .header{
-        height: auto;
-        &__vid-and-title{
+        &__button-string{
             display: flex;
-            flex-direction: column;
-        }
-        &__LeftPartVidAndTitle{
-            width: 100%;
-        }
-        &__RightPartVidTitle {
-            width: 100%;
+            justify-content: space-around;
         }
     }
     #ButTry{
@@ -1177,5 +1200,10 @@ body{
     .send {
         padding: 10px 26px;
         margin-left: 3.5%;
+    }
+    .ButtonBuyNow, .TryForFree, .GetStartedCustomers {
+        width: 130px;
+        height: 40px;
+        padding-top: 13px;
     }
 }
