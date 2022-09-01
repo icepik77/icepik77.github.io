@@ -172,6 +172,9 @@ body {
   padding: 0 3%;
   position: relative;
 }
+.header__button-string {
+  display: flex;
+}
 .header__LeftPartVidAndTitle {
   float: left;
   display: inline-block;

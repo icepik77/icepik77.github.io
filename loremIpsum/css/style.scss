@@ -149,6 +149,9 @@ body{
 	height: 745px;
     padding: 0 3%;
     position: relative;
+    &__button-string{
+        display: flex;
+    }
     &__LeftPartVidAndTitle{
         float: left;
         display: inline-block;
