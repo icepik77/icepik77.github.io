@@ -31,7 +31,9 @@ ul li a:hover {
   color: #061e37;
 }
 
-.ButtonBuyNow, .TryForFree, .GetStartedCustomers {
+.ButtonBuyNow,
+.TryForFree,
+.GetStartedCustomers {
   width: 150px;
   height: 50px;
   background-color: white;
@@ -56,7 +58,9 @@ ul li a:hover {
   cursor: pointer;
 }
 
-.ButtonBuyNow a, .TryForFree a, .GetStartedCustomers a {
+.ButtonBuyNow a,
+.TryForFree a,
+.GetStartedCustomers a {
   color: #061e37;
   text-decoration: none;
 }
@@ -90,7 +94,8 @@ ul li a:hover {
   text-align: center;
 }
 
-.first-image, .third-image {
+.first-image,
+.third-image {
   opacity: 0.4;
   width: 116px;
   height: 115px;
@@ -163,8 +168,14 @@ body {
   color: grey;
 }
 
+.services__stasistics.clicked .hide-text,
+.services__inbox.clicked .hide-text,
+.services__team.clicked .hide-text {
+  padding-top: 5%;
+}
+
 .header {
-  background-image: url("../img/header.png");
+  background-image: url("../img/header.webp");
   max-width: 1600px;
   margin: 0 auto;
   font-size: 15px;
@@ -248,7 +259,9 @@ body {
   margin: 0 auto;
   display: flex;
 }
-.useful__firstusefull img, .useful .useful__secondtusefull img, .useful .useful__thirdtusefull img {
+.useful__firstusefull img,
+.useful .useful__secondtusefull img,
+.useful .useful__thirdtusefull img {
   padding-left: 40%;
 }
 .useful__colorstring {
@@ -345,11 +358,15 @@ body {
 .useful__thirdtusefull {
   margin-left: 15%;
 }
-.useful__firstusefull p, .useful .useful__secondtusefull p, .useful .useful__thirdtusefull p {
+.useful__firstusefull p,
+.useful .useful__secondtusefull p,
+.useful .useful__thirdtusefull p {
   color: grey;
   text-align: center;
 }
-.useful__firstusefull span, .useful .useful__secondtusefull span, .useful .useful__thirdtusefull span {
+.useful__firstusefull span,
+.useful .useful__secondtusefull span,
+.useful .useful__thirdtusefull span {
   font-size: 20px;
   color: black;
 }
@@ -357,7 +374,9 @@ body {
 .services {
   margin-top: 50px;
 }
-.services__statistics, .services .services__inbox, .services .services__team {
+.services__statistics,
+.services .services__inbox,
+.services .services__team {
   box-shadow: 1px 1px 10px grey;
   border-radius: 5px;
   max-width: 800px;
@@ -365,7 +384,9 @@ body {
   height: 45px;
   margin-top: 20px;
 }
-.services__stasistics p, .services .services__inbox p, .services .services__team p {
+.services__stasistics p,
+.services .services__inbox p,
+.services .services__team p {
   float: left;
   margin-top: 10px;
   margin-left: 10px;
@@ -384,12 +405,16 @@ body {
   text-align: center;
   color: grey;
 }
-.services__stat-img, .services .services__inbox-img, .services .services__team-img {
+.services__stat-img,
+.services .services__inbox-img,
+.services .services__team-img {
   display: none;
   float: left;
   margin-left: -79px;
 }
-.services__stat-text, .services .services__team-text, .services .services__inbox-text {
+.services__stat-text,
+.services .services__team-text,
+.services .services__inbox-text {
   display: none;
 }
 .services__stasistics {
@@ -423,7 +448,7 @@ body {
   margin: 0 auto;
   margin-top: 50px;
   padding-bottom: 20px;
-  background-image: url("../img/fontsforcustoms.png");
+  background-image: url("../img/fontsforcustoms.webp");
 }
 .customers__column-1 {
   display: flex;
@@ -586,7 +611,8 @@ body {
   display: block;
   text-align: center;
 }
-.our-team__text-bottom-1, .our-team .our-team__text-bottom-3 {
+.our-team__text-bottom-1,
+.our-team .our-team__text-bottom-3 {
   opacity: 0;
 }
 .our-team__social {
@@ -731,10 +757,14 @@ body {
   .useful .string {
     display: flex;
   }
-  .useful__firstcolor, .useful .useful__secondstcolor, .useful .useful__fourthstcolor {
+  .useful__firstcolor,
+.useful .useful__secondstcolor,
+.useful .useful__fourthstcolor {
     position: relative;
   }
-  .useful__firstcolor img, .useful .useful__secondstcolor img, .useful .useful__fourthstcolor img {
+  .useful__firstcolor img,
+.useful .useful__secondstcolor img,
+.useful .useful__fourthstcolor img {
     margin-top: 38px;
     margin-left: 18px;
     position: absolute;
@@ -830,14 +860,20 @@ body {
   nav {
     margin-left: 10%;
   }
-  .useful__firstcolor, .useful .useful__secondstcolor, .useful .useful__fourthstcolor {
+  .useful__firstcolor,
+.useful .useful__secondstcolor,
+.useful .useful__fourthstcolor {
     position: relative;
     height: 130px;
   }
-  .useful__firstcolor img, .useful .useful__secondstcolor img, .useful .useful__fourthstcolor img {
+  .useful__firstcolor img,
+.useful .useful__secondstcolor img,
+.useful .useful__fourthstcolor img {
     width: 50px;
   }
-  .useful__firstcolor p, .useful .useful__secondstcolor p, .useful .useful__fourthstcolor p {
+  .useful__firstcolor p,
+.useful .useful__secondstcolor p,
+.useful .useful__fourthstcolor p {
     margin-right: 26%;
   }
   .useful__thirdstcolor {
@@ -850,11 +886,15 @@ body {
   .useful__thirdstcolor p {
     margin-right: 23%;
   }
-  .services__stasistics, .services .services__inbox, .services .services__team {
+  .services__stasistics,
+.services .services__inbox,
+.services .services__team {
     max-width: 700px;
     width: 90%;
   }
-  .services__statdivright, .services .services__inboxdivright, .services .inboxdivright {
+  .services__statdivright,
+.services .services__inboxdivright,
+.services .inboxdivright {
     margin-left: 80%;
   }
   .customers__row {
@@ -942,7 +982,9 @@ body {
     margin: 0 auto;
     margin-bottom: 20px;
   }
-  .useful__firstusefull, .useful .useful__secondtusefull, .useful .useful__thirdtusefull {
+  .useful__firstusefull,
+.useful .useful__secondtusefull,
+.useful .useful__thirdtusefull {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -953,13 +995,17 @@ body {
   .useful__thirdtusefull {
     margin-left: 0;
   }
-  .useful__firstcolor, .useful .useful__secondstcolor, .useful .useful__fourthstcolor {
+  .useful__firstcolor,
+.useful .useful__secondstcolor,
+.useful .useful__fourthstcolor {
     height: 150px;
     width: 100%;
     margin-left: 0;
     margin-right: 0;
   }
-  .useful__firstcolor p, .useful .useful__secondstcolor p, .useful .useful__fourthstcolor p {
+  .useful__firstcolor p,
+.useful .useful__secondstcolor p,
+.useful .useful__fourthstcolor p {
     font-size: 25px;
     margin-top: 30px;
     text-align: center;
@@ -988,13 +1034,22 @@ body {
   .useful__thirdstcolor img {
     margin-left: 18px;
   }
-  .useful__firstusefull img, .useful .useful__secondtusefull img, .useful .useful__thirdtusefull img {
+  .useful__firstusefull img,
+.useful .useful__secondtusefull img,
+.useful .useful__thirdtusefull img {
     padding-left: 0;
   }
-  .services__statdivright, .services .services__inboxdivright, .services .inboxdivright {
+  .services__statdivright,
+.services .services__inboxdivright,
+.services .inboxdivright {
     margin-left: 0;
     right: 3%;
     padding-right: 0;
+  }
+  .services__stat-img,
+.services .services__inbox-img,
+.services .services__team-img {
+    margin-top: 20px;
   }
   .customers__block {
     width: 80%;
@@ -1071,7 +1126,8 @@ body {
     width: 156px;
     height: 129px;
   }
-  .first-image, .third-image {
+  .first-image,
+.third-image {
     opacity: 0.4;
     width: 56px;
     height: 55px;
@@ -1196,7 +1252,9 @@ body {
     padding: 10px 26px;
     margin-left: 3.5%;
   }
-  .ButtonBuyNow, .TryForFree, .GetStartedCustomers {
+  .ButtonBuyNow,
+.TryForFree,
+.GetStartedCustomers {
     width: 130px;
     height: 40px;
     padding-top: 13px;
