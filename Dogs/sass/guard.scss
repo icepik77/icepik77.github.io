@@ -383,17 +383,17 @@ body{
         display: flex;
         margin-top:3%
     }
+    &__title{
+        text-align: center;
+        font-size: 36px;
+        font-family: 'Oswald', sans-serif;
+    }
     &__pocket{
         background: linear-gradient(180deg, #E1E1E1 0%, #FAF9F6 50.31%, #E1E1E1 100%);
         width: 405px;
         height: 455px;
         margin-right: 11%;
         border-radius: 10px;
-        & :first-child{
-            text-align: center;
-            font-size: 36px;
-            font-family: 'Oswald', sans-serif;
-        }
         & :nth-child(2){
             text-align: center;
             font-size: 24px;

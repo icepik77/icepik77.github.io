@@ -189,7 +189,6 @@ function offendiensEvent(){
         camera.rotation.y=dafaultRotation;
         renderer.render(scene, camera);
 
-
         let interval = setInterval(function(){
             if (obj.scene.rotation.y>-2.1 || camera.position.y<10
                 || camera.position.z >10){
@@ -278,19 +277,48 @@ let trainingButton = document.querySelector(".header__training a");
 let offendiensButton = document.querySelector(".header__offendiens a");
 let breedersButton = document.querySelector(".header__breeders a");
 let guardButton = document.querySelector(".header__guard a");
+let animation = 0;
 
 
 trainingButton.onmouseover = function(event){
-    trainingEvent();
+
+    if (animation == 0){
+
+        trainingEvent();
+        animation = 1;
+        setTimeout(function(){animation=0}, 1000);
+    } 
+      
 }
 offendiensButton.onmouseover = function(event){
-    offendiensEvent();
+
+    if (animation == 0){
+
+        offendiensEvent();
+        animation = 1;
+        setTimeout(function(){animation=0}, 1000);
+    }
+    
+   
+   
 }
 breedersButton.onmouseover = function(event){
-    breedersEvent();
+
+    if (animation == 0){
+
+        breedersEvent();
+        animation = 1;
+        setTimeout(function(){animation=0}, 1000);
+    }
 }
 guardButton.onmouseover = function(event){
-    guardEvent();
+
+    if (animation == 0){
+
+        guardEvent();
+        animation = 1;
+        setTimeout(function(){animation=0}, 1000);
+    }
 }
 
 let burger = document.querySelector(".header__menu-burger");

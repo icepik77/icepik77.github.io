@@ -366,17 +366,17 @@ body {
   display: flex;
   margin-top: 3%;
 }
+.cost__title {
+  text-align: center;
+  font-size: 36px;
+  font-family: "Oswald", sans-serif;
+}
 .cost__pocket {
   background: linear-gradient(180deg, #E1E1E1 0%, #FAF9F6 50.31%, #E1E1E1 100%);
   width: 405px;
   height: 455px;
   margin-right: 11%;
   border-radius: 10px;
-}
-.cost__pocket :first-child {
-  text-align: center;
-  font-size: 36px;
-  font-family: "Oswald", sans-serif;
 }
 .cost__pocket :nth-child(2) {
   text-align: center;
