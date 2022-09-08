@@ -1,0 +1,44 @@
+.section{
+    display: flex;
+    justify-content: center;
+    max-width: 1360px;
+    margin: 0 auto;
+}
+.achievements{
+    flex-direction: column;
+}
+.section__title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 45px;
+    margin-left: 5%;
+}
+.section__red-title{
+    color: #B33539;
+}
+.section__img-grafik{
+    width: 90%;
+    margin: 0 auto;
+}
+.section__img-grafik_mobile{
+    width: 100%;
+    display: none;
+}
+
+@media (max-width: 768px){
+    .section__img-grafik{
+        display: none;
+    }
+    .section__img-grafik_mobile{
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+@media (max-width:425px){
+    .section__title {
+        font-size: 25px;
+    }
+}
