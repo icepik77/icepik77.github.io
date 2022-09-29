@@ -16,19 +16,18 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header" id="main">
             <div class="header__high-row">
                 <div class="header__logo">
                     ANANastia.art
                 </div>
                 <nav class="header__menu">
                     <ul>
-                        <li><a href="">Услуги</a></li>
-                        <li><a href="">Портфолио</a></li>
-                        <li><a href="">О себе</a></li>
-                        <li><a href="">Ответы на вопросы</a> </li>
-                        <li><a href="">Блог</a> </li>
-                        <li><a href="">Контакты</a> </li>
+                        <li><a href="#main">Услуги</a></li>
+                        <li><a href="#portfolio">Портфолио</a></li>
+                        <li><a href="#answer">Ответы на вопросы</a> </li>
+                        <li><a href="#blog">Блог</a> </li>
+                        <li><a href="#contact">Контакты</a> </li>
                     </ul>
                 </nav>
                 <div class="menu-burger">
@@ -103,33 +102,30 @@
                     </div>
                 </div>
             </div>
-            <div class="nav-mobile">
-                <nav class="nav">
-                    <ul class="menu">
-                        <li>
-                            <a href="#">Услуги</a>
-                        </li>
-                        <li>
-                            <a href="#">Портфолио</a>
-                        </li>
-                        <li>
-                            <a href="#">О себе</a>
-                        </li>
-                        <li>
-                            <a href="#">Ответы на вопросы</a>
-                        </li>
-                        <li>
-                            <a href="#">Блог</a>
-                        </li>
-                        <li>
-                            <a href="#">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
         </header>
+        <div class="nav-mobile">
+            <nav class="nav">
+                <ul class="menu">
+                    <li>
+                        <a href="#main">Услуги</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Портфолио</a>
+                    </li>
+                    <li>
+                        <a href="#answer">Ответы на вопросы</a>
+                    </li>
+                    <li>
+                        <a href="#blog">Блог</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <div class="content">
-            <div class="portfolio">
+            <div class="portfolio" id="portfolio">
                 <img src="img/secSlide.webp" alt="portfolio fone" class="portfolio__fone">
                 <div class="portfolio__title">
                     Портфолио
@@ -239,8 +235,8 @@
                         Открыть галлерею
                     </a>
                 </div>
-                <div class="portfolio__second-row">
-                    <div class="portfolio__big-text">
+                <div class="portfolio__second-row" id="about">
+                    <div class="portfolio__big-text" >
                         <span>О себе</span> <br>
                         <span>Я ищу в проекте не проблемы, а пути наилучшего решения.</span>
 
@@ -256,7 +252,7 @@
                     </div>
                 </div>
             </div>
-            <div class="answer">
+            <div class="answer" id="answer">
                 <div class="answer__title">
                     Ответы на вопросы
                 </div>
@@ -376,7 +372,7 @@
                     Задать вопрос
                 </a>
             </div>
-            <div class="youtube">
+            <div class="youtube" id="blog">
                 <div class="youtube__title">
                     Личный блог на
                 </div>
@@ -387,7 +383,7 @@
                 <img src="img/youtubeCat.webp" alt="ytb" class="youtube__cat">
             </div>
         </div>
-        <footer class="footer">
+        <footer class="footer" id="contact">
             <div class="footer__contact">
                 Контакты
             </div>
